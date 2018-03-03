@@ -1046,6 +1046,7 @@ use think\Db;
 				$data['content']=$data['content']."<td>".$sdata[$i]['stunum']."</td>";
 				$data['content']=$data['content']."<td>".$sdata[$i]['stuname']."</td>";
 				$data['content']=$data['content']."<td>".$sdata[$i]['sex']."</td>";
+				$data['content']=$data['content']."<td>".'<button class="btn btn-success btn-sm pull-left" id="del{$i}"  value="{$vo.id}" >删除此学生</button>'."</td>";
 				$data['content']=$data['content']."</tr>";
 			}
 			$data['state']=200;

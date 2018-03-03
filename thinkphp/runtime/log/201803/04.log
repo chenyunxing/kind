@@ -13938,3 +13938,2534 @@
 [ sql ] [ SQL ] SELECT * FROM `allstudentbackup` WHERE  `classname` = '管理学院15级会计（5）班' [ RunTime:0.000628s ]
 
 ---------------------------------------------------------------
+[ 2018-03-04T03:06:10+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/upstudent
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upstudent [运行时间：0.048357s][吞吐率：20.68req/s] [内存消耗：3,060.37kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upstudent',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upstudent[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\upstudent.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000933s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006176s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000376s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:06:17+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/upstu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upstu [运行时间：0.157748s][吞吐率：6.34req/s] [内存消耗：7,028.45kb] [文件加载：121]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upstu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '27862',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarykJDKVeBTsM2EQ8qM',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upstu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000854s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.004692s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000281s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:06:19+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/upsure
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upsure [运行时间：0.385735s][吞吐率：2.59req/s] [内存消耗：6,155.48kb] [文件加载：104]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upsure',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '9',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+  'data' => 'sure',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upsure[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010567s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.005390s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allstudent` [ RunTime:0.004525s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 2 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (1 , 2 , '张倩琳' , '77' , '82') [ RunTime:0.007317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allworks` [ RunTime:0.003689s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (1 , 2 , '张倩琳') [ RunTime:0.003148s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `totalmark` [ RunTime:0.003564s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (1 , 2 , '张倩琳') [ RunTime:0.002860s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 3 LIMIT 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (2 , 3 , '黄芯颖' , '82' , '82') [ RunTime:0.002534s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (2 , 3 , '黄芯颖') [ RunTime:0.004548s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (2 , 3 , '黄芯颖') [ RunTime:0.004156s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 4 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (3 , 4 , '林显锋' , '82' , '67') [ RunTime:0.004165s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (3 , 4 , '林显锋') [ RunTime:0.003804s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (3 , 4 , '林显锋') [ RunTime:0.002404s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 5 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (4 , 5 , '杨广申' , '82' , '81') [ RunTime:0.002322s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (4 , 5 , '杨广申') [ RunTime:0.004289s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (4 , 5 , '杨广申') [ RunTime:0.004192s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 6 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (5 , 6 , '洪楚芬' , '84' , '77') [ RunTime:0.002839s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (5 , 6 , '洪楚芬') [ RunTime:0.002536s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (5 , 6 , '洪楚芬') [ RunTime:0.002020s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 7 LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (6 , 7 , '黎婉君' , '82' , '79') [ RunTime:0.002121s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (6 , 7 , '黎婉君') [ RunTime:0.001939s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (6 , 7 , '黎婉君') [ RunTime:0.002453s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 8 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (7 , 8 , '陈韵怡' , '82' , '78') [ RunTime:0.002294s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (7 , 8 , '陈韵怡') [ RunTime:0.002776s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (7 , 8 , '陈韵怡') [ RunTime:0.002406s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 9 LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (8 , 9 , '陈海莹' , '82' , '79') [ RunTime:0.002597s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (8 , 9 , '陈海莹') [ RunTime:0.002284s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (8 , 9 , '陈海莹') [ RunTime:0.002480s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 10 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (9 , 10 , '朱碧贞' , '75' , '66') [ RunTime:0.002347s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (9 , 10 , '朱碧贞') [ RunTime:0.002652s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (9 , 10 , '朱碧贞') [ RunTime:0.002482s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 11 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (10 , 11 , '陈婉嫔' , '80' , '72') [ RunTime:0.002422s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (10 , 11 , '陈婉嫔') [ RunTime:0.002579s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (10 , 11 , '陈婉嫔') [ RunTime:0.002289s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 12 LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (11 , 12 , '甘筱清' , '79' , '64') [ RunTime:0.002354s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (11 , 12 , '甘筱清') [ RunTime:0.002678s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (11 , 12 , '甘筱清') [ RunTime:0.003167s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 13 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (12 , 13 , '萧嘉嘉' , '82' , '83') [ RunTime:0.002837s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (12 , 13 , '萧嘉嘉') [ RunTime:0.002670s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (12 , 13 , '萧嘉嘉') [ RunTime:0.002937s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 14 LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (13 , 14 , '陈博诗' , '82' , '83') [ RunTime:0.002297s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (13 , 14 , '陈博诗') [ RunTime:0.002443s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (13 , 14 , '陈博诗') [ RunTime:0.002196s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 15 LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (14 , 15 , '罗雅浈' , '82' , '84') [ RunTime:0.002198s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (14 , 15 , '罗雅浈') [ RunTime:0.002355s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (14 , 15 , '罗雅浈') [ RunTime:0.002519s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 16 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (15 , 16 , '姚晓琳' , '82' , '81') [ RunTime:0.002613s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (15 , 16 , '姚晓琳') [ RunTime:0.003372s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (15 , 16 , '姚晓琳') [ RunTime:0.002472s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 17 LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (16 , 17 , '陈鸿婷' , '83' , '85') [ RunTime:0.002765s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (16 , 17 , '陈鸿婷') [ RunTime:0.002256s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (16 , 17 , '陈鸿婷') [ RunTime:0.002686s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 18 LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (17 , 18 , '郑茂泽' , '71' , '78') [ RunTime:0.003045s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (17 , 18 , '郑茂泽') [ RunTime:0.002364s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (17 , 18 , '郑茂泽') [ RunTime:0.002253s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 19 LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (18 , 19 , '翁子仪' , '82' , '87') [ RunTime:0.002189s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (18 , 19 , '翁子仪') [ RunTime:0.002712s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (18 , 19 , '翁子仪') [ RunTime:0.002692s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 20 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (19 , 20 , '王晓珊' , '83' , '85') [ RunTime:0.002898s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (19 , 20 , '王晓珊') [ RunTime:0.002431s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (19 , 20 , '王晓珊') [ RunTime:0.002576s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 21 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (20 , 21 , '王蔚琳' , '83' , '83') [ RunTime:0.002864s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (20 , 21 , '王蔚琳') [ RunTime:0.002962s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (20 , 21 , '王蔚琳') [ RunTime:0.002625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 22 LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (21 , 22 , '梁舒敏' , '78' , '82') [ RunTime:0.002271s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (21 , 22 , '梁舒敏') [ RunTime:0.002308s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (21 , 22 , '梁舒敏') [ RunTime:0.002364s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 23 LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (22 , 23 , '余漪楠' , '83' , '81') [ RunTime:0.002334s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (22 , 23 , '余漪楠') [ RunTime:0.002366s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (22 , 23 , '余漪楠') [ RunTime:0.002586s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 24 LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (23 , 24 , '何颖欣' , '78' , '79') [ RunTime:0.002383s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (23 , 24 , '何颖欣') [ RunTime:0.002370s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (23 , 24 , '何颖欣') [ RunTime:0.002262s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 25 LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (24 , 25 , '吕月凤' , '77' , '84') [ RunTime:0.002604s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (24 , 25 , '吕月凤') [ RunTime:0.002820s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (24 , 25 , '吕月凤') [ RunTime:0.002643s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 26 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (25 , 26 , '洪梓熹' , '76' , '79') [ RunTime:0.002372s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (25 , 26 , '洪梓熹') [ RunTime:0.002588s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (25 , 26 , '洪梓熹') [ RunTime:0.003119s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 27 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (26 , 27 , '劳嘉莉' , '75' , '78') [ RunTime:0.002482s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (26 , 27 , '劳嘉莉') [ RunTime:0.002422s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (26 , 27 , '劳嘉莉') [ RunTime:0.002530s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 28 LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (27 , 28 , '梁冠杰' , '71' , '77') [ RunTime:0.002435s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (27 , 28 , '梁冠杰') [ RunTime:0.002376s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (27 , 28 , '梁冠杰') [ RunTime:0.002497s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 29 LIMIT 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (28 , 29 , '李丽凌' , '73' , '84') [ RunTime:0.003315s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (28 , 29 , '李丽凌') [ RunTime:0.002743s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (28 , 29 , '李丽凌') [ RunTime:0.002863s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 30 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (29 , 30 , '余礼馨' , '83' , '84') [ RunTime:0.002155s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (29 , 30 , '余礼馨') [ RunTime:0.002626s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (29 , 30 , '余礼馨') [ RunTime:0.002338s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 31 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (30 , 31 , '朱慧琳' , '83' , '84') [ RunTime:0.002473s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (30 , 31 , '朱慧琳') [ RunTime:0.002364s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (30 , 31 , '朱慧琳') [ RunTime:0.002409s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 32 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (31 , 32 , '李宇婷' , '78' , '82') [ RunTime:0.002310s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (31 , 32 , '李宇婷') [ RunTime:0.002436s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (31 , 32 , '李宇婷') [ RunTime:0.002302s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 15 LIMIT 1 [ RunTime:0.000440s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:07:14+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/over
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/over [运行时间：0.059525s][吞吐率：16.80req/s] [内存消耗：3,060.34kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'over',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->over[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\over.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010970s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006106s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000556s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:07:17+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/lookstu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/lookstu [运行时间：0.059044s][吞吐率：16.94req/s] [内存消耗：3,070.78kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'lookstu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->lookstu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\lookstu.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010910s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.005924s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.004459s ]
+[ sql ] [ SQL ] SELECT * FROM `classss` [ RunTime:0.000340s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:07:23+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/over
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/over [运行时间：0.052584s][吞吐率：19.02req/s] [内存消耗：3,060.34kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'over',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->over[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\over.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010664s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.005424s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000355s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:07:27+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/upover
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upover [运行时间：0.222439s][吞吐率：4.50req/s] [内存消耗：3,060.49kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upover',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '9',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+  'data' => 'sure',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upover[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011320s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.007567s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000407s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:07:36+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/lookstu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/lookstu [运行时间：0.056134s][吞吐率：17.81req/s] [内存消耗：3,070.78kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'lookstu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->lookstu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\lookstu.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010801s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006069s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.004012s ]
+[ sql ] [ SQL ] SELECT * FROM `classss` [ RunTime:0.000499s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:07:38+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/upstudent
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upstudent [运行时间：0.050666s][吞吐率：19.74req/s] [内存消耗：3,060.37kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upstudent',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upstudent[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\upstudent.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010560s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.005753s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000271s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:07:48+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/upstu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upstu [运行时间：0.164707s][吞吐率：6.07req/s] [内存消耗：7,028.45kb] [文件加载：121]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upstu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '27862',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryaJshHW46wBefriJA',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upstu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000684s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006657s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000365s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:07:56+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/upstu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upstu [运行时间：0.127392s][吞吐率：7.85req/s] [内存消耗：6,492.42kb] [文件加载：112]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upstu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '28881',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryO0vlBWLM1UJshdgL',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upstu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000670s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006157s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000361s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:07:58+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/upsure
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upsure [运行时间：0.128654s][吞吐率：7.77req/s] [内存消耗：6,106.12kb] [文件加载：104]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upsure',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '9',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+  'data' => 'sure',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upsure[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010526s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.005513s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allstudent` [ RunTime:0.005452s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 0 LIMIT 1 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (1 , 0 , '2' , '201510102008' , '邓卓铭') [ RunTime:0.010660s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allworks` [ RunTime:0.003954s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (1 , 0 , '2') [ RunTime:0.003339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `totalmark` [ RunTime:0.004034s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (1 , 0 , '2') [ RunTime:0.003731s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 0 LIMIT 1 [ RunTime:0.000268s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:08:06+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/upsure
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upsure [运行时间：0.098815s][吞吐率：10.12req/s] [内存消耗：6,099.72kb] [文件加载：104]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upsure',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '9',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+  'data' => 'sure',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upsure[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010308s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006357s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allstudent` [ RunTime:0.003647s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 0 LIMIT 1 [ RunTime:0.000328s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:08:10+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/over
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/over [运行时间：0.042280s][吞吐率：23.65req/s] [内存消耗：3,060.34kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'over',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->over[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\over.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001310s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006081s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000594s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:08:13+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/upover
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upover [运行时间：0.159320s][吞吐率：6.28req/s] [内存消耗：3,060.49kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upover',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '9',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+  'data' => 'sure',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upover[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001020s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006873s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000391s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:08:59+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/lookstu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/lookstu [运行时间：0.055866s][吞吐率：17.90req/s] [内存消耗：3,070.78kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'lookstu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->lookstu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\lookstu.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010934s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006293s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.003341s ]
+[ sql ] [ SQL ] SELECT * FROM `classss` [ RunTime:0.000322s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:08:59+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/lookstu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/lookstu [运行时间：0.059039s][吞吐率：16.94req/s] [内存消耗：3,070.78kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'lookstu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->lookstu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\lookstu.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010882s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.005359s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.003311s ]
+[ sql ] [ SQL ] SELECT * FROM `classss` [ RunTime:0.000372s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:09:02+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/addcu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/addcu [运行时间：0.052724s][吞吐率：18.97req/s] [内存消耗：3,060.34kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'addcu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->addcu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\addcu.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011113s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006773s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000457s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:09:03+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/chosecu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/chosecu [运行时间：0.054099s][吞吐率：18.48req/s] [内存消耗：3,130.02kb] [文件加载：57]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'chosecu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->chosecu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\chosecu.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'nextstate',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011075s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.004013s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `curriculum` [ RunTime:0.004123s ]
+[ sql ] [ SQL ] SELECT * FROM `curriculum` ORDER BY `id`  desc LIMIT 10,10 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `curriculum` ORDER BY `id`  desc LIMIT 0,10 [ RunTime:0.000289s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:09:06+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/usecu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/usecu [运行时间：0.063895s][吞吐率：15.65req/s] [内存消耗：3,101.54kb] [文件加载：58]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'usecu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '5',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->usecu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001164s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006742s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `curriculum` [ RunTime:0.004418s ]
+[ sql ] [ SQL ] UPDATE `curriculum`  SET `state`=0  WHERE  `state` = 1 [ RunTime:0.003091s ]
+[ sql ] [ SQL ] UPDATE `curriculum`  SET `state`=1  WHERE  `id` = 12 [ RunTime:0.002838s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:09:08+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/showkecheng
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/showkecheng [运行时间：0.101691s][吞吐率：9.83req/s] [内存消耗：6,177.79kb] [文件加载：111]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'showkecheng',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->showkecheng[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\showkecheng.html [ array (
+  0 => 'data',
+  1 => 'hang',
+  2 => 'line',
+  3 => 'sheetData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010895s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.005341s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `curriculum` [ RunTime:0.004417s ]
+[ sql ] [ SQL ] SELECT * FROM `curriculum` WHERE  `state` = 1 [ RunTime:0.000257s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:09:16+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/lookstu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/lookstu [运行时间：0.063287s][吞吐率：15.80req/s] [内存消耗：3,070.78kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'lookstu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->lookstu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\lookstu.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011421s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.004302s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.004156s ]
+[ sql ] [ SQL ] SELECT * FROM `classss` [ RunTime:0.000454s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:09:18+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/upstudent
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upstudent [运行时间：0.041271s][吞吐率：24.23req/s] [内存消耗：3,060.37kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upstudent',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upstudent[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\upstudent.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000876s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000373s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:09:20+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/lookstu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/lookstu [运行时间：0.055481s][吞吐率：18.02req/s] [内存消耗：3,070.78kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'lookstu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->lookstu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\lookstu.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010999s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.005588s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.003959s ]
+[ sql ] [ SQL ] SELECT * FROM `classss` [ RunTime:0.000171s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:09:21+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/upstudent
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upstudent [运行时间：0.048040s][吞吐率：20.82req/s] [内存消耗：3,060.37kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upstudent',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upstudent[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\upstudent.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010673s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.004482s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000614s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:09:36+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/upstu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upstu [运行时间：0.145796s][吞吐率：6.86req/s] [内存消耗：6,078.78kb] [文件加载：106]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upstu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '25825',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary6AvM1u8vZG2p4vG9',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upstu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000832s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.007961s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000293s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:10:07+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/upsure
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upsure [运行时间：0.610892s][吞吐率：1.64req/s] [内存消耗：6,046.91kb] [文件加载：104]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upsure',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '9',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+  'data' => 'sure',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upsure[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010700s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.005372s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allstudent` [ RunTime:0.004463s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102001 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (1 , 201510102001 , '李碧君' , '女' , '管理学院15级会计（3）班') [ RunTime:0.003035s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allworks` [ RunTime:0.003714s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (1 , 201510102001 , '李碧君') [ RunTime:0.003537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `totalmark` [ RunTime:0.004408s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (1 , 201510102001 , '李碧君') [ RunTime:0.003387s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102008 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (2 , 201510102008 , '邓卓铭' , '男' , '管理学院15级会计（3）班') [ RunTime:0.003143s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (2 , 201510102008 , '邓卓铭') [ RunTime:0.004788s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (2 , 201510102008 , '邓卓铭') [ RunTime:0.004646s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102016 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (3 , 201510102016 , '谢达政' , '男' , '管理学院15级会计（3）班') [ RunTime:0.004242s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (3 , 201510102016 , '谢达政') [ RunTime:0.004249s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (3 , 201510102016 , '谢达政') [ RunTime:0.002367s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102020 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (4 , 201510102020 , '许卓君' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002718s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (4 , 201510102020 , '许卓君') [ RunTime:0.004982s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (4 , 201510102020 , '许卓君') [ RunTime:0.004847s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102028 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (5 , 201510102028 , '卢祉彤' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002870s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (5 , 201510102028 , '卢祉彤') [ RunTime:0.003208s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (5 , 201510102028 , '卢祉彤') [ RunTime:0.002729s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102033 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (6 , 201510102033 , '黄梓欣' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002565s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (6 , 201510102033 , '黄梓欣') [ RunTime:0.002438s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (6 , 201510102033 , '黄梓欣') [ RunTime:0.002428s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102050 LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (7 , 201510102050 , '张韵' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002295s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (7 , 201510102050 , '张韵') [ RunTime:0.003031s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (7 , 201510102050 , '张韵') [ RunTime:0.002698s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102056 LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (8 , 201510102056 , '谢婷' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002579s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (8 , 201510102056 , '谢婷') [ RunTime:0.002503s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (8 , 201510102056 , '谢婷') [ RunTime:0.002488s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102068 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (9 , 201510102068 , '翁裕舜' , '男' , '管理学院15级会计（3）班') [ RunTime:0.002436s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (9 , 201510102068 , '翁裕舜') [ RunTime:0.002633s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (9 , 201510102068 , '翁裕舜') [ RunTime:0.002871s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102089 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (10 , 201510102089 , '林敏琪' , '女' , '管理学院15级会计（3）班') [ RunTime:0.003176s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (10 , 201510102089 , '林敏琪') [ RunTime:0.003111s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (10 , 201510102089 , '林敏琪') [ RunTime:0.002957s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102102 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (11 , 201510102102 , '廖炜滨' , '男' , '管理学院15级会计（3）班') [ RunTime:0.003073s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (11 , 201510102102 , '廖炜滨') [ RunTime:0.003755s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (11 , 201510102102 , '廖炜滨') [ RunTime:0.003265s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102105 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (12 , 201510102105 , '陈爽' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002603s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (12 , 201510102105 , '陈爽') [ RunTime:0.003004s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (12 , 201510102105 , '陈爽') [ RunTime:0.003231s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102107 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (13 , 201510102107 , '林少冰' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002818s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (13 , 201510102107 , '林少冰') [ RunTime:0.002384s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (13 , 201510102107 , '林少冰') [ RunTime:0.002715s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102125 LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (14 , 201510102125 , '朱旭升' , '男' , '管理学院15级会计（3）班') [ RunTime:0.002303s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (14 , 201510102125 , '朱旭升') [ RunTime:0.002689s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (14 , 201510102125 , '朱旭升') [ RunTime:0.002810s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102126 LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (15 , 201510102126 , '李艳嫦' , '女' , '管理学院15级会计（3）班') [ RunTime:0.003058s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (15 , 201510102126 , '李艳嫦') [ RunTime:0.003134s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (15 , 201510102126 , '李艳嫦') [ RunTime:0.002947s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102154 LIMIT 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (16 , 201510102154 , '胡海婷' , '女' , '管理学院15级会计（3）班') [ RunTime:0.003418s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (16 , 201510102154 , '胡海婷') [ RunTime:0.002842s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (16 , 201510102154 , '胡海婷') [ RunTime:0.002591s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102157 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (17 , 201510102157 , '陈宝丽' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002190s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (17 , 201510102157 , '陈宝丽') [ RunTime:0.002431s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (17 , 201510102157 , '陈宝丽') [ RunTime:0.002626s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102167 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (18 , 201510102167 , '卢娜妃' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002648s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (18 , 201510102167 , '卢娜妃') [ RunTime:0.002445s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (18 , 201510102167 , '卢娜妃') [ RunTime:0.002370s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102173 LIMIT 1 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (19 , 201510102173 , '李东颖' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002269s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (19 , 201510102173 , '李东颖') [ RunTime:0.002545s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (19 , 201510102173 , '李东颖') [ RunTime:0.002324s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102179 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (20 , 201510102179 , '陆金庆' , '男' , '管理学院15级会计（3）班') [ RunTime:0.007638s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (20 , 201510102179 , '陆金庆') [ RunTime:0.004038s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (20 , 201510102179 , '陆金庆') [ RunTime:0.005814s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102182 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (21 , 201510102182 , '何慧萍' , '女' , '管理学院15级会计（3）班') [ RunTime:0.003644s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (21 , 201510102182 , '何慧萍') [ RunTime:0.002985s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (21 , 201510102182 , '何慧萍') [ RunTime:0.002328s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102187 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (22 , 201510102187 , '梁文涛' , '男' , '管理学院15级会计（3）班') [ RunTime:0.002297s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (22 , 201510102187 , '梁文涛') [ RunTime:0.002496s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (22 , 201510102187 , '梁文涛') [ RunTime:0.002475s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102194 LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (23 , 201510102194 , '陈柳元' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002311s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (23 , 201510102194 , '陈柳元') [ RunTime:0.002258s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (23 , 201510102194 , '陈柳元') [ RunTime:0.002437s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102201 LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (24 , 201510102201 , '陆惠娴' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002465s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (24 , 201510102201 , '陆惠娴') [ RunTime:0.002426s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (24 , 201510102201 , '陆惠娴') [ RunTime:0.002547s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102202 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (25 , 201510102202 , '李斯琪' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002448s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (25 , 201510102202 , '李斯琪') [ RunTime:0.002795s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (25 , 201510102202 , '李斯琪') [ RunTime:0.002386s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102206 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (26 , 201510102206 , '张美玲' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002475s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (26 , 201510102206 , '张美玲') [ RunTime:0.002660s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (26 , 201510102206 , '张美玲') [ RunTime:0.003133s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102208 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (27 , 201510102208 , '林凯斌' , '男' , '管理学院15级会计（3）班') [ RunTime:0.002482s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (27 , 201510102208 , '林凯斌') [ RunTime:0.002333s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (27 , 201510102208 , '林凯斌') [ RunTime:0.002695s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102227 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (28 , 201510102227 , '谢雯琪' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002573s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (28 , 201510102227 , '谢雯琪') [ RunTime:0.002390s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (28 , 201510102227 , '谢雯琪') [ RunTime:0.002704s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102233 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (29 , 201510102233 , '朱蔚彤' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002503s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (29 , 201510102233 , '朱蔚彤') [ RunTime:0.002250s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (29 , 201510102233 , '朱蔚彤') [ RunTime:0.003113s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102242 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (30 , 201510102242 , '罗楠' , '女' , '管理学院15级会计（3）班') [ RunTime:0.003080s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (30 , 201510102242 , '罗楠') [ RunTime:0.003057s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (30 , 201510102242 , '罗楠') [ RunTime:0.002489s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102250 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (31 , 201510102250 , '钟杭娜' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002592s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (31 , 201510102250 , '钟杭娜') [ RunTime:0.002832s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (31 , 201510102250 , '钟杭娜') [ RunTime:0.002451s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102271 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (32 , 201510102271 , '谢秋月' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002479s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (32 , 201510102271 , '谢秋月') [ RunTime:0.002672s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (32 , 201510102271 , '谢秋月') [ RunTime:0.002174s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102283 LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (33 , 201510102283 , '陈靖欣' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002610s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (33 , 201510102283 , '陈靖欣') [ RunTime:0.002215s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (33 , 201510102283 , '陈靖欣') [ RunTime:0.002266s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102314 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (34 , 201510102314 , '王丹妮' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002990s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (34 , 201510102314 , '王丹妮') [ RunTime:0.002490s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (34 , 201510102314 , '王丹妮') [ RunTime:0.002390s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102326 LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (35 , 201510102326 , '傅雪婷' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002301s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (35 , 201510102326 , '傅雪婷') [ RunTime:0.002555s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (35 , 201510102326 , '傅雪婷') [ RunTime:0.002378s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102354 LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (36 , 201510102354 , '钟一铭' , '男' , '管理学院15级会计（3）班') [ RunTime:0.002333s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (36 , 201510102354 , '钟一铭') [ RunTime:0.002626s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (36 , 201510102354 , '钟一铭') [ RunTime:0.002182s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102374 LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (37 , 201510102374 , '褚烨彤' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002364s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (37 , 201510102374 , '褚烨彤') [ RunTime:0.002313s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (37 , 201510102374 , '褚烨彤') [ RunTime:0.002366s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102384 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (38 , 201510102384 , '徐泳雯' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002809s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (38 , 201510102384 , '徐泳雯') [ RunTime:0.002356s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (38 , 201510102384 , '徐泳雯') [ RunTime:0.002353s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102389 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (39 , 201510102389 , '何鑫' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002346s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (39 , 201510102389 , '何鑫') [ RunTime:0.002195s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (39 , 201510102389 , '何鑫') [ RunTime:0.002552s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102437 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (40 , 201510102437 , '王仪' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002253s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (40 , 201510102437 , '王仪') [ RunTime:0.002230s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (40 , 201510102437 , '王仪') [ RunTime:0.002342s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102452 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (41 , 201510102452 , '范芷君' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002092s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (41 , 201510102452 , '范芷君') [ RunTime:0.002552s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (41 , 201510102452 , '范芷君') [ RunTime:0.002557s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102466 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (42 , 201510102466 , '郑钰莹' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002401s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (42 , 201510102466 , '郑钰莹') [ RunTime:0.003626s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (42 , 201510102466 , '郑钰莹') [ RunTime:0.002714s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102505 LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (43 , 201510102505 , '蔡敏晓' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002319s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (43 , 201510102505 , '蔡敏晓') [ RunTime:0.002338s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (43 , 201510102505 , '蔡敏晓') [ RunTime:0.002683s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102516 LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (44 , 201510102516 , '梁建泉' , '男' , '管理学院15级会计（3）班') [ RunTime:0.002317s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (44 , 201510102516 , '梁建泉') [ RunTime:0.002436s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (44 , 201510102516 , '梁建泉') [ RunTime:0.002708s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102521 LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (45 , 201510102521 , '伍斌猷' , '男' , '管理学院15级会计（3）班') [ RunTime:0.002422s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (45 , 201510102521 , '伍斌猷') [ RunTime:0.002828s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (45 , 201510102521 , '伍斌猷') [ RunTime:0.002918s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102538 LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (46 , 201510102538 , '刘兰' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002585s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (46 , 201510102538 , '刘兰') [ RunTime:0.002340s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (46 , 201510102538 , '刘兰') [ RunTime:0.002283s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102551 LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (47 , 201510102551 , '练佳鸿' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002427s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (47 , 201510102551 , '练佳鸿') [ RunTime:0.002505s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (47 , 201510102551 , '练佳鸿') [ RunTime:0.002295s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102563 LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (48 , 201510102563 , '周惜妙' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002367s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (48 , 201510102563 , '周惜妙') [ RunTime:0.002251s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (48 , 201510102563 , '周惜妙') [ RunTime:0.002211s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102574 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (49 , 201510102574 , '张美香' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002427s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (49 , 201510102574 , '张美香') [ RunTime:0.002224s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (49 , 201510102574 , '张美香') [ RunTime:0.002346s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102603 LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (50 , 201510102603 , '卓慧娴' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002471s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (50 , 201510102603 , '卓慧娴') [ RunTime:0.002735s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (50 , 201510102603 , '卓慧娴') [ RunTime:0.002465s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102614 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (51 , 201510102614 , '陈淯垠' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002311s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (51 , 201510102614 , '陈淯垠') [ RunTime:0.002661s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (51 , 201510102614 , '陈淯垠') [ RunTime:0.002624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102616 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (52 , 201510102616 , '张佳熳' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002105s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (52 , 201510102616 , '张佳熳') [ RunTime:0.002326s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (52 , 201510102616 , '张佳熳') [ RunTime:0.002417s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102619 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (53 , 201510102619 , '林嘉琪' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002338s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (53 , 201510102619 , '林嘉琪') [ RunTime:0.002464s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (53 , 201510102619 , '林嘉琪') [ RunTime:0.002281s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102646 LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (54 , 201510102646 , '王泽远' , '男' , '管理学院15级会计（3）班') [ RunTime:0.002312s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (54 , 201510102646 , '王泽远') [ RunTime:0.002396s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (54 , 201510102646 , '王泽远') [ RunTime:0.002134s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102647 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (55 , 201510102647 , '谢艳娜' , '女' , '管理学院15级会计（3）班') [ RunTime:0.002112s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (55 , 201510102647 , '谢艳娜') [ RunTime:0.002107s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (55 , 201510102647 , '谢艳娜') [ RunTime:0.002247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.003408s ]
+[ sql ] [ SQL ] INSERT INTO `classss` (`classname` , `allS`) VALUES ('管理学院15级会计（3）班' , 55) [ RunTime:0.003129s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:10:08+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/lookstu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/lookstu [运行时间：0.046807s][吞吐率：21.36req/s] [内存消耗：3,070.91kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'lookstu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->lookstu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\lookstu.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000779s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006104s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.003602s ]
+[ sql ] [ SQL ] SELECT * FROM `classss` [ RunTime:0.000367s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:10:10+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/studata
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/studata [运行时间：0.064223s][吞吐率：15.57req/s] [内存消耗：3,105.91kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'studata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '6',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+  'data' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->studata[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010279s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006456s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.004038s ]
+[ sql ] [ SQL ] SELECT * FROM `classss` WHERE  `id` = 1 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allstudent` [ RunTime:0.004108s ]
+[ sql ] [ SQL ] SELECT * FROM `allstudent` WHERE  `classname` = '管理学院15级会计（3）班' [ RunTime:0.000638s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:10:26+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/upstudent
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upstudent [运行时间：0.040949s][吞吐率：24.42req/s] [内存消耗：3,060.37kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upstudent',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upstudent[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\upstudent.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000951s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006927s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000573s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:10:29+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/upstu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upstu [运行时间：0.102673s][吞吐率：9.74req/s] [内存消耗：6,078.78kb] [文件加载：106]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upstu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '25825',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarySpoeW7ATAU74AiX6',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upstu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000940s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006654s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000335s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:10:31+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/upsure
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upsure [运行时间：0.079154s][吞吐率：12.63req/s] [内存消耗：6,028.01kb] [文件加载：104]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upsure',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '9',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+  'data' => 'sure',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upsure[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000992s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.003552s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allstudent` [ RunTime:0.004065s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102001 LIMIT 1 [ RunTime:0.000438s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:10:57+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/upstu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upstu [运行时间：0.105543s][吞吐率：9.47req/s] [内存消耗：6,078.77kb] [文件加载：106]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upstu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '25825',
+  'accept' => '*/*',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarynYgjdXVNxPJAEgdV',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upstu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000702s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.007188s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000389s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:11:00+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/upsure
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/upsure [运行时间：0.594591s][吞吐率：1.68req/s] [内存消耗：6,046.92kb] [文件加载：104]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upsure',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '9',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+  'data' => 'sure',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upsure[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001262s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.003601s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allstudent` [ RunTime:0.003797s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201430102429 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (1 , 201430102429 , '吴晓彤' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002932s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allworks` [ RunTime:0.004625s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (1 , 201430102429 , '吴晓彤') [ RunTime:0.002809s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `totalmark` [ RunTime:0.003644s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (1 , 201430102429 , '吴晓彤') [ RunTime:0.002914s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102018 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (2 , 201510102018 , '沈嘉钊' , '男' , '管理学院15级会计学（4）班') [ RunTime:0.002652s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (2 , 201510102018 , '沈嘉钊') [ RunTime:0.002882s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (2 , 201510102018 , '沈嘉钊') [ RunTime:0.002719s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102021 LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (3 , 201510102021 , '苏晓君' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002740s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (3 , 201510102021 , '苏晓君') [ RunTime:0.002758s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (3 , 201510102021 , '苏晓君') [ RunTime:0.002457s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102032 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (4 , 201510102032 , '林晓燕' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002668s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (4 , 201510102032 , '林晓燕') [ RunTime:0.002674s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (4 , 201510102032 , '林晓燕') [ RunTime:0.002431s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102059 LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (5 , 201510102059 , '江欣欣' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002269s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (5 , 201510102059 , '江欣欣') [ RunTime:0.002726s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (5 , 201510102059 , '江欣欣') [ RunTime:0.002706s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102127 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (6 , 201510102127 , '张慕娇' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002514s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (6 , 201510102127 , '张慕娇') [ RunTime:0.003290s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (6 , 201510102127 , '张慕娇') [ RunTime:0.002692s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102130 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (7 , 201510102130 , '蔡恒丰' , '男' , '管理学院15级会计学（4）班') [ RunTime:0.002601s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (7 , 201510102130 , '蔡恒丰') [ RunTime:0.002702s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (7 , 201510102130 , '蔡恒丰') [ RunTime:0.002909s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102133 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (8 , 201510102133 , '陈铭沛' , '男' , '管理学院15级会计学（4）班') [ RunTime:0.002279s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (8 , 201510102133 , '陈铭沛') [ RunTime:0.004638s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (8 , 201510102133 , '陈铭沛') [ RunTime:0.004639s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102135 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (9 , 201510102135 , '陈莲' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002553s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (9 , 201510102135 , '陈莲') [ RunTime:0.002792s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (9 , 201510102135 , '陈莲') [ RunTime:0.002311s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102150 LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (10 , 201510102150 , '卞梦江' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002546s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (10 , 201510102150 , '卞梦江') [ RunTime:0.002438s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (10 , 201510102150 , '卞梦江') [ RunTime:0.002617s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102158 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (11 , 201510102158 , '谭昕' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002465s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (11 , 201510102158 , '谭昕') [ RunTime:0.002626s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (11 , 201510102158 , '谭昕') [ RunTime:0.002529s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102183 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (12 , 201510102183 , '苏肇君' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002576s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (12 , 201510102183 , '苏肇君') [ RunTime:0.002526s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (12 , 201510102183 , '苏肇君') [ RunTime:0.002257s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102191 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (13 , 201510102191 , '何泽龙' , '男' , '管理学院15级会计学（4）班') [ RunTime:0.002179s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (13 , 201510102191 , '何泽龙') [ RunTime:0.002250s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (13 , 201510102191 , '何泽龙') [ RunTime:0.002431s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102203 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (14 , 201510102203 , '朱曼瑶' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.003162s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (14 , 201510102203 , '朱曼瑶') [ RunTime:0.003140s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (14 , 201510102203 , '朱曼瑶') [ RunTime:0.002683s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102209 LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (15 , 201510102209 , '何浩贤' , '男' , '管理学院15级会计学（4）班') [ RunTime:0.002854s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (15 , 201510102209 , '何浩贤') [ RunTime:0.002791s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (15 , 201510102209 , '何浩贤') [ RunTime:0.002652s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102210 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (16 , 201510102210 , '李朝曦' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002519s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (16 , 201510102210 , '李朝曦') [ RunTime:0.002881s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (16 , 201510102210 , '李朝曦') [ RunTime:0.002700s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102214 LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (17 , 201510102214 , '胡汉君' , '男' , '管理学院15级会计学（4）班') [ RunTime:0.002237s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (17 , 201510102214 , '胡汉君') [ RunTime:0.004170s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (17 , 201510102214 , '胡汉君') [ RunTime:0.004187s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102215 LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (18 , 201510102215 , '黄子聪' , '男' , '管理学院15级会计学（4）班') [ RunTime:0.002455s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (18 , 201510102215 , '黄子聪') [ RunTime:0.002902s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (18 , 201510102215 , '黄子聪') [ RunTime:0.002529s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102231 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (19 , 201510102231 , '巫欣' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002363s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (19 , 201510102231 , '巫欣') [ RunTime:0.002725s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (19 , 201510102231 , '巫欣') [ RunTime:0.002189s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102248 LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (20 , 201510102248 , '陈彩晴' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002144s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (20 , 201510102248 , '陈彩晴') [ RunTime:0.002590s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (20 , 201510102248 , '陈彩晴') [ RunTime:0.002266s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102251 LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (21 , 201510102251 , '廖怡宸' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002169s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (21 , 201510102251 , '廖怡宸') [ RunTime:0.002536s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (21 , 201510102251 , '廖怡宸') [ RunTime:0.002625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102252 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (22 , 201510102252 , '刘家俊' , '男' , '管理学院15级会计学（4）班') [ RunTime:0.002301s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (22 , 201510102252 , '刘家俊') [ RunTime:0.002810s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (22 , 201510102252 , '刘家俊') [ RunTime:0.011953s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102258 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (23 , 201510102258 , '张洁' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002394s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (23 , 201510102258 , '张洁') [ RunTime:0.002782s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (23 , 201510102258 , '张洁') [ RunTime:0.002214s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102274 LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (24 , 201510102274 , '曾思楚' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002741s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (24 , 201510102274 , '曾思楚') [ RunTime:0.002697s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (24 , 201510102274 , '曾思楚') [ RunTime:0.002664s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102300 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (25 , 201510102300 , '梁鸿欣' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002942s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (25 , 201510102300 , '梁鸿欣') [ RunTime:0.003248s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (25 , 201510102300 , '梁鸿欣') [ RunTime:0.002474s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102301 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (26 , 201510102301 , '张婉怡' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002325s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (26 , 201510102301 , '张婉怡') [ RunTime:0.002739s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (26 , 201510102301 , '张婉怡') [ RunTime:0.004541s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102312 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (27 , 201510102312 , '陈楠洁' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.003197s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (27 , 201510102312 , '陈楠洁') [ RunTime:0.002501s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (27 , 201510102312 , '陈楠洁') [ RunTime:0.002525s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102315 LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (28 , 201510102315 , '赖映妃' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002906s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (28 , 201510102315 , '赖映妃') [ RunTime:0.002418s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (28 , 201510102315 , '赖映妃') [ RunTime:0.002347s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102329 LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (29 , 201510102329 , '唐静华' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002159s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (29 , 201510102329 , '唐静华') [ RunTime:0.002466s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (29 , 201510102329 , '唐静华') [ RunTime:0.002096s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102333 LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (30 , 201510102333 , '陈怡彤' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002206s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (30 , 201510102333 , '陈怡彤') [ RunTime:0.002258s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (30 , 201510102333 , '陈怡彤') [ RunTime:0.002477s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102353 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (31 , 201510102353 , '黄琪光' , '男' , '管理学院15级会计学（4）班') [ RunTime:0.002496s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (31 , 201510102353 , '黄琪光') [ RunTime:0.002529s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (31 , 201510102353 , '黄琪光') [ RunTime:0.002446s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102385 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (32 , 201510102385 , '徐凤烟' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002520s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (32 , 201510102385 , '徐凤烟') [ RunTime:0.002640s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (32 , 201510102385 , '徐凤烟') [ RunTime:0.002295s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102387 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (33 , 201510102387 , '姚莉滢' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002408s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (33 , 201510102387 , '姚莉滢') [ RunTime:0.002911s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (33 , 201510102387 , '姚莉滢') [ RunTime:0.002586s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102438 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (34 , 201510102438 , '余汝欣' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002439s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (34 , 201510102438 , '余汝欣') [ RunTime:0.002685s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (34 , 201510102438 , '余汝欣') [ RunTime:0.002914s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102441 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (35 , 201510102441 , '高佩怡' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002654s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (35 , 201510102441 , '高佩怡') [ RunTime:0.002876s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (35 , 201510102441 , '高佩怡') [ RunTime:0.002911s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102453 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (36 , 201510102453 , '蔡颖梅' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002557s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (36 , 201510102453 , '蔡颖梅') [ RunTime:0.002478s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (36 , 201510102453 , '蔡颖梅') [ RunTime:0.002487s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102485 LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (37 , 201510102485 , '苏文婧' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002232s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (37 , 201510102485 , '苏文婧') [ RunTime:0.002445s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (37 , 201510102485 , '苏文婧') [ RunTime:0.002651s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102489 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (38 , 201510102489 , '李欣玲' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002573s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (38 , 201510102489 , '李欣玲') [ RunTime:0.002590s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (38 , 201510102489 , '李欣玲') [ RunTime:0.002529s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102507 LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (39 , 201510102507 , '李春莹' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002362s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (39 , 201510102507 , '李春莹') [ RunTime:0.002468s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (39 , 201510102507 , '李春莹') [ RunTime:0.002225s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102509 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (40 , 201510102509 , '陈家幸' , '男' , '管理学院15级会计学（4）班') [ RunTime:0.002241s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (40 , 201510102509 , '陈家幸') [ RunTime:0.002350s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (40 , 201510102509 , '陈家幸') [ RunTime:0.002427s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102520 LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (41 , 201510102520 , '叶楚晓' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002481s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (41 , 201510102520 , '叶楚晓') [ RunTime:0.002248s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (41 , 201510102520 , '叶楚晓') [ RunTime:0.002439s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102522 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (42 , 201510102522 , '黄敏静' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002521s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (42 , 201510102522 , '黄敏静') [ RunTime:0.002324s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (42 , 201510102522 , '黄敏静') [ RunTime:0.003317s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102529 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (43 , 201510102529 , '周惠璇' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002900s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (43 , 201510102529 , '周惠璇') [ RunTime:0.002630s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (43 , 201510102529 , '周惠璇') [ RunTime:0.002405s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102554 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (44 , 201510102554 , '张诗倩' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002605s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (44 , 201510102554 , '张诗倩') [ RunTime:0.002619s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (44 , 201510102554 , '张诗倩') [ RunTime:0.002748s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102555 LIMIT 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (45 , 201510102555 , '江祥林' , '男' , '管理学院15级会计学（4）班') [ RunTime:0.002384s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (45 , 201510102555 , '江祥林') [ RunTime:0.002235s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (45 , 201510102555 , '江祥林') [ RunTime:0.002436s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102556 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (46 , 201510102556 , '黄诗莹' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002275s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (46 , 201510102556 , '黄诗莹') [ RunTime:0.002303s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (46 , 201510102556 , '黄诗莹') [ RunTime:0.002367s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102557 LIMIT 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (47 , 201510102557 , '周兆敬' , '男' , '管理学院15级会计学（4）班') [ RunTime:0.002422s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (47 , 201510102557 , '周兆敬') [ RunTime:0.002439s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (47 , 201510102557 , '周兆敬') [ RunTime:0.002360s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102566 LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (48 , 201510102566 , '陈缘' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002816s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (48 , 201510102566 , '陈缘') [ RunTime:0.002916s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (48 , 201510102566 , '陈缘') [ RunTime:0.002521s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102579 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (49 , 201510102579 , '裴丽旦' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002280s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (49 , 201510102579 , '裴丽旦') [ RunTime:0.002234s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (49 , 201510102579 , '裴丽旦') [ RunTime:0.002642s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102607 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (50 , 201510102607 , '吴娟娟' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002937s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (50 , 201510102607 , '吴娟娟') [ RunTime:0.002824s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (50 , 201510102607 , '吴娟娟') [ RunTime:0.002462s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102617 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (51 , 201510102617 , '许梦悦' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002388s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (51 , 201510102617 , '许梦悦') [ RunTime:0.002678s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (51 , 201510102617 , '许梦悦') [ RunTime:0.002511s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102623 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (52 , 201510102623 , '徐淑绵' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002961s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (52 , 201510102623 , '徐淑绵') [ RunTime:0.002478s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (52 , 201510102623 , '徐淑绵') [ RunTime:0.002492s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102633 LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (53 , 201510102633 , '陈泽敏' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002313s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (53 , 201510102633 , '陈泽敏') [ RunTime:0.002326s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (53 , 201510102633 , '陈泽敏') [ RunTime:0.002580s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102645 LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (54 , 201510102645 , '王怡欣' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002156s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (54 , 201510102645 , '王怡欣') [ RunTime:0.002156s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (54 , 201510102645 , '王怡欣') [ RunTime:0.002060s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `allstudent` WHERE  `stunum` = 201510102667 LIMIT 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] INSERT INTO `allstudent` (`Xstu` , `stunum` , `stuname` , `sex` , `classname`) VALUES (55 , 201510102667 , '张喜晴' , '女' , '管理学院15级会计学（4）班') [ RunTime:0.002450s ]
+[ sql ] [ SQL ] INSERT INTO `allworks` (`Xstu` , `stunum` , `stuname`) VALUES (55 , 201510102667 , '张喜晴') [ RunTime:0.003269s ]
+[ sql ] [ SQL ] INSERT INTO `totalmark` (`Xstu` , `stunum` , `stuname`) VALUES (55 , 201510102667 , '张喜晴') [ RunTime:0.003013s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.003609s ]
+[ sql ] [ SQL ] INSERT INTO `classss` (`classname` , `allS`) VALUES ('管理学院15级会计学（4）班' , 55) [ RunTime:0.002405s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:11:01+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/lookstu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/lookstu [运行时间：0.056969s][吞吐率：17.55req/s] [内存消耗：3,071.05kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'lookstu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->lookstu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\lookstu.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011006s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.005763s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.003449s ]
+[ sql ] [ SQL ] SELECT * FROM `classss` [ RunTime:0.000288s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:11:03+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/studata
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/studata [运行时间：0.058124s][吞吐率：17.20req/s] [内存消耗：3,105.93kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'studata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '6',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+  'data' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->studata[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001529s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.005339s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.004028s ]
+[ sql ] [ SQL ] SELECT * FROM `classss` WHERE  `id` = 2 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allstudent` [ RunTime:0.003805s ]
+[ sql ] [ SQL ] SELECT * FROM `allstudent` WHERE  `classname` = '管理学院15级会计学（4）班' [ RunTime:0.000790s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:13:03+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/index.html
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/index.html [运行时间：0.052034s][吞吐率：19.22req/s] [内存消耗：3,116.05kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/readylogin/justlogin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->index[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000730s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006319s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000829s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:13:03+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/static/assets/css/bootstrap.css.map
+[ log ] 127.0.0.1/kind/thinkphp/public/static/assets/css/bootstrap.css.map [运行时间：0.017650s][吞吐率：56.66req/s] [内存消耗：1,299.94kb] [文件加载：40]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'assets',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-03-04T03:13:06+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/index/shuaige/lookstu
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/lookstu [运行时间：0.059916s][吞吐率：16.69req/s] [内存消耗：3,209.29kb] [文件加载：58]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'lookstu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->lookstu[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\lookstu.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011101s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006271s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.003942s ]
+[ sql ] [ SQL ] SELECT * FROM `classss` [ RunTime:0.000243s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:14:12+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/studata
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/studata [运行时间：0.067986s][吞吐率：14.71req/s] [内存消耗：3,105.91kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'studata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '6',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+  'data' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->studata[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010998s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006417s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.004947s ]
+[ sql ] [ SQL ] SELECT * FROM `classss` WHERE  `id` = 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allstudent` [ RunTime:0.004462s ]
+[ sql ] [ SQL ] SELECT * FROM `allstudent` WHERE  `classname` = '管理学院15级会计（3）班' [ RunTime:0.000791s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:15:44+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/studata
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/studata [运行时间：0.072058s][吞吐率：13.88req/s] [内存消耗：3,107.15kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'studata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '6',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+  'data' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->studata[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010421s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.005503s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.003986s ]
+[ sql ] [ SQL ] SELECT * FROM `classss` WHERE  `id` = 2 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allstudent` [ RunTime:0.003932s ]
+[ sql ] [ SQL ] SELECT * FROM `allstudent` WHERE  `classname` = '管理学院15级会计学（4）班' [ RunTime:0.000645s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:15:47+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/studata
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/studata [运行时间：0.067823s][吞吐率：14.74req/s] [内存消耗：3,107.13kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'studata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '6',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+  'data' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->studata[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010531s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.005330s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.003847s ]
+[ sql ] [ SQL ] SELECT * FROM `classss` WHERE  `id` = 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allstudent` [ RunTime:0.004949s ]
+[ sql ] [ SQL ] SELECT * FROM `allstudent` WHERE  `classname` = '管理学院15级会计（3）班' [ RunTime:0.000548s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:15:52+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/studata
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/studata [运行时间：0.065925s][吞吐率：15.17req/s] [内存消耗：3,107.13kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'studata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '6',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+  'data' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->studata[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010519s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006846s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.004321s ]
+[ sql ] [ SQL ] SELECT * FROM `classss` WHERE  `id` = 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allstudent` [ RunTime:0.003477s ]
+[ sql ] [ SQL ] SELECT * FROM `allstudent` WHERE  `classname` = '管理学院15级会计（3）班' [ RunTime:0.000611s ]
+
+---------------------------------------------------------------
+[ 2018-03-04T03:15:53+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/index/shuaige/studata
+[ log ] 127.0.0.1/kind/thinkphp/public/index/shuaige/studata [运行时间：0.051919s][吞吐率：19.26req/s] [内存消耗：3,107.15kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'studata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '6',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/kind/thinkphp/public/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=sg08h9is9oqthpg3ld3u2p3nqu',
+)
+[ info ] [ PARAM ] array (
+  'data' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->studata[ D:\web\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000634s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.004010s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.003642s ]
+[ sql ] [ SQL ] SELECT * FROM `classss` WHERE  `id` = 2 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allstudent` [ RunTime:0.005108s ]
+[ sql ] [ SQL ] SELECT * FROM `allstudent` WHERE  `classname` = '管理学院15级会计学（4）班' [ RunTime:0.000636s ]
+
+---------------------------------------------------------------

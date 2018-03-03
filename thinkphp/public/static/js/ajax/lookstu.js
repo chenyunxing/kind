@@ -54,6 +54,11 @@ $(document).ready(function(){
 				button=this;
 				sent2(this.value);
 			});
+			$("#add"+i).click(function(){
+				layer.msg('加载中', {icon: 16,shade:[0.1,'#000'], time:1000000000});
+				button=this;
+				sent2(this.value);
+			});
 		}
 	});
 });
