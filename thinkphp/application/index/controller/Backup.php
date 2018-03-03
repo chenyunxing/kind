@@ -1023,6 +1023,68 @@ use think\Db;
 			$view->data = $data;
 			return $view->fetch();
 		}
+		//增加单个学生的接口
+		function stuoneadd(){
+			$request = request();
+			$getdata=$request->param();
+			$sex=$getdata['sex'];
+			$stunum=$getdata['stunum'];
+			$stuname=$getdata['stuname'];
+			$classid=$getdata['classid'];
+			if(!is_numeric($stunum)){
+				//随意命名一个数字代表数据错误
+				$data['state']=300;
+				return $data;
+			}
+			$classss=model('classss');
+			$allstudent =model('allstudent');
+			$allworks=model('allworks');
+			$totalmark=model('totalmark');
+
+			//读取班级信息,由此获取到序号
+			$data=$classss->returnone($classid);
+			$classname=$data[0]['classname'];
+			$allstu=$allstudent->returnone($classname);
+			$maxstu=0;
+			for ($i=count($allstu)-1; $i >=0 ; $i--) { 
+				if ($maxstu<$allstu[$i]['Xstu']) {
+					$maxstu=$allstu[$i]['Xstu'];
+				}
+			}
+			$maxstu++;
+			//添加学生
+			$allstudent->addstudent($maxstu,$stunum,$stuname,$sex,$classname);
+			$totalmark->add($maxstu,$stunum,$stuname);
+			$allworks->alltheworks($maxstu,$stunum,$stuname);
+			$classss->where('id',$classid)->setInc('allS');
+			$data['state']=200;
+			return $data;
+		}
+		//删除单个学生的接口
+		function stuonedel(){
+			$request = request();
+			$getdata=$request->param();
+			$id=$getdata['id'];
+			$classss=model('classss');
+			$allstudent =model('allstudent');
+			$allworks=model('allworks');
+			$totalmark=model('totalmark');
+			$singlegrade=model('singlegrade');
+			//通过id获取到学号和班级名称
+			$studata=$allstudent->find($id);
+			$classname=$studata[0]['classname'];
+			$stunum=$studata[0]['stunum'];
+			$classid=$classss->find($classname);
+			$classid=$classid[0]['id'];
+			//添加学生
+			$allstudent->deleteone($stunum);
+			$totalmark->deleteone($stunum);
+			$allworks->deleteone($stunum);
+			$singlegrade->deleteone($stunum);
+			$classss->where('id',$classid)->setDec('allS');
+			$data['state']=200;
+			return $data;
+		}
 		//返回学生信息的接口，传入参数为post的data班级Id,返回值
 		function studata(){
 			//获取输入的班级id

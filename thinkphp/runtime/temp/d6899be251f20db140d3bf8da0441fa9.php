@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\web\htdocs\kind\thinkphp\public/../application/index\view\backup\index.html";i:1508224919;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\web\htdocs\kind\thinkphp\public/../application/index\view\backup\index.html";i:1520112398;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -138,7 +138,7 @@
                           <li id="ajax14" ajax="summary"><p>成绩统计</p></li>
                       </ul>
                   </li>
-                  <li class="sub-menu">
+                  <!-- <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class=" fa fa-bar-chart-o"></i>
                           <span>结束课程</span>
@@ -147,7 +147,7 @@
                           <li  id="ajax15" ajax="over"><p>结束课程</p></li>
                           <li  id="ajax16" ajax="back"><p>还原历次数据</p></li>
                       </ul>
-                  </li>
+                  </li> -->
 
               </ul>
               <!-- sidebar menu end-->

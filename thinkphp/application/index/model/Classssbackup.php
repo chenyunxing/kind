@@ -58,6 +58,11 @@ class Classssbackup extends Model
 		$data['id']=$id;
 		return $this->where($data)->delete();
 	}
+	public function find($classname)
+	{
+		$data['classname']=$classname;
+		return $this->where($data)->select();
+	}
 }
 
  ?>

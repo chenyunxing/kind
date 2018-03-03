@@ -46,6 +46,10 @@ class Singlegradebackup extends Model
 		// 获取自增ID
 		// echo $this->id;
 	}
+
+
+
+
 	public function changesingle($stunum,$txt,$grade,$re_grade,$work)
 	{
 		

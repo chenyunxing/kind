@@ -1,10 +1,12 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\back.html";i:1502889671;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\web\htdocs\kind\thinkphp\public/../application/index\view\shuaige\back.html";i:1520112516;}*/ ?>
 <section class="wrapper">
   <h3>还原数据页面</h3>
   <div class="row mt">
         <div class="col-md-12">
             <div class="content-panel">
                 <h4>文件列表</h4>
+                <hr>
+                <a href="../backup/index.html"><button class="btn btn-success btn-sm pull-left">进入还原库</button></a>
                 <hr>
                 <table class="table table-striped table-advance table-hover">
                   <thead>

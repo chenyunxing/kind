@@ -30,7 +30,6 @@ class Allworks extends Model
 	{
 		$data['stunum'] = $stunum;
 		return $this->where($data)->delete();
-		
 	}
 	public function updateone($stunum,$data)
 	{

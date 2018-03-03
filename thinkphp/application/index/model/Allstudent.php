@@ -51,6 +51,14 @@ class Allstudent extends Model
 	public function selectone($stuname){
 		return $this->where('stuname',$stuname)->select();
 	}
+	function deleteone($stunum){
+		$data['stunum']=$stunum;
+		return $this->where($data)->delete();
+	}
+	function find($id){
+		$data['id']=$id;
+		return $this->where($data)->select();
+	}
 }
 
  ?>
