@@ -1640,8 +1640,8 @@ use think\Db;
 				if($zzz[$i]['Kuai_su_cheng_xing']!=-1){$j++;$sum=$sum+$zzz[$i]['Kuai_su_cheng_xing'];}
 				if($zzz[$i]['re_chu_li']!=-1){$j++;$sum=$sum+$zzz[$i]['re_chu_li'];}
 				$stunum=$zzz[$i]['stunum'];
-				$regular_grade=$sum/$j;
-				$totalmark->getthereg($stunum,$regular_grade);
+				$regular_grade=$sum*1.0/$j;
+				$totalmark->getthereg($stunum,round($regular_grade));
 			}
 			$www=$totalmark->returnall();
 			for($d=0;$d<$k;$d++){
@@ -1896,16 +1896,16 @@ use think\Db;
 			file_put_contents($to_file_name,$info,FILE_APPEND);
 			//将每个表的表结构导出到文件
 			foreach($tabList as $val){
-				if ($val=='admin'||$val=='curriculum'||$val=='notice') {
+				if ($val=='admin'||$val=='curriculum'||$val=='notice'||$val=='totalmarkbackup'||$val=='singlegradebackup'||$val=='classssbackup'||$val=='allworksbackup'||$val=='allstudentbackup') {
 					continue;
 				}
-				$sql = "show create table ".$val;
+				$sql = "show create table ".$val.'backup';
 				$res = mysqli_query($mysqli,$sql);
 				$row = mysqli_fetch_array($res);
 				$info = "-- ----------------------------\r\n";
-				$info .= "-- Table structure for `".$val."`\r\n";
+				$info .= "-- Table structure for `".$val.'backup'."`\r\n";
 				$info .= "-- ----------------------------\r\n";
-				$info .= "DROP TABLE IF EXISTS `".$val."`;\r\n";
+				$info .= "DROP TABLE IF EXISTS `".$val.'backup'."`;\r\n";
 				$sqlStr = $info.$row[1].";\r\n\r\n";
 				//追加到文件
 				file_put_contents($to_file_name,$sqlStr,FILE_APPEND);
@@ -1914,7 +1914,7 @@ use think\Db;
 			}
 			//将每个表的数据导出到文件
 			foreach($tabList as $val){
-				if ($val=='admin'||$val=='curriculum'||$val=='notice') {
+				if ($val=='admin'||$val=='curriculum'||$val=='notice'||$val=='totalmarkbackup'||$val=='singlegradebackup'||$val=='classssbackup'||$val=='allworksbackup'||$val=='allstudentbackup') {
 					continue;
 				}
 				$sql = "select * from ".$val;
@@ -1923,12 +1923,12 @@ use think\Db;
 				if(mysqli_num_rows($res)<1) continue;
 				//
 				$info = "-- ----------------------------\r\n";
-				$info .= "-- Records for `".$val."`\r\n";
+				$info .= "-- Records for `".$val.'backup'."`\r\n";
 				$info .= "-- ----------------------------\r\n";
 				file_put_contents($to_file_name,$info,FILE_APPEND);
 				//读取数据
 				while($row = mysqli_fetch_row($res)){
-					$sqlStr = "INSERT INTO `".$val."` VALUES (";
+					$sqlStr = "INSERT INTO `".$val.'backup'."` VALUES (";
 				foreach($row as $zd){
 					$sqlStr .= "'".$zd."', ";
 				}
@@ -1945,40 +1945,18 @@ use think\Db;
 		}
 		//清除数据库接口
 		function clear(){
-			$database=[
-				// 数据库类型
-				'type'        => 'mysql',
-				// 数据库连接DSN配置
-				'dsn'         => '',
-				// 服务器地址
-				'hostname'    => '127.0.0.1',
-				// 数据库名
-				'database'    => 'kindbackup',
-				// 数据库用户名
-				'username'    => 'root',
-				// 数据库密码
-				'password'    => 'root',
-				// 数据库连接端口
-				'hostport'    => '3306',
-				// 数据库连接参数
-				'params'      => [],
-				// 数据库编码默认采用utf8
-				'charset'     => 'utf8',
-				// 数据库表前缀
-				'prefix'      => '',
-			];
-			// $database=Config::get('database');
+			$database=Config::get('database');
 			$cfg_dbhost = $database['hostname'];
 			$cfg_dbname = $database['database'];
 			$cfg_dbuser = $database['username'];
 			$cfg_dbpwd = $database['password'];
 			$mysqli = new \mysqli($cfg_dbhost, $cfg_dbuser,$cfg_dbpwd,$cfg_dbname);
 			mysqli_query($mysqli,"SET NAMES 'UTF8'");
-			$sql1= "TRUNCATE TABLE allstudentbackup;";
-			$sql2= "TRUNCATE TABLE allworksbackup;";
-			$sql3= "TRUNCATE TABLE classssbackup;";
-			$sql4= "TRUNCATE TABLE singlegradebackup;";
-			$sql5= "TRUNCATE TABLE totalmarkbackup;";
+			$sql1= "TRUNCATE TABLE allstudent;";
+			$sql2= "TRUNCATE TABLE allworks;";
+			$sql3= "TRUNCATE TABLE classss;";
+			$sql4= "TRUNCATE TABLE singlegrade;";
+			$sql5= "TRUNCATE TABLE totalmark;";
 			//拼接的方法不好使 只能一个个来
 			$flag=5;
 			if(mysqli_query($mysqli,$sql1)){$flag--;}
