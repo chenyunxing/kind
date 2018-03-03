@@ -1,0 +1,817 @@
+[ 2017-09-26T12:45:56+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/kind.php/index/readylogin/index.html
+[ log ] 127.0.0.1:8080/kind/thinkphp/public/kind.php/index/readylogin/index.html [运行时间：0.575328s][吞吐率：1.74req/s] [内存消耗：418.05kb] [文件加载：45]
+[ info ] [ LANG ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'readylogin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Readylogin->index[ D:\UPUPW_AP5.6\htdocs\kind\thinkphp\application\index\controller\Readylogin.php ]
+[ info ] [ VIEW ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\public/../application/index\view\readylogin\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-26T12:47:57+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/kind.php/index/readylogin/justlogin.html
+[ log ] 127.0.0.1:8080/kind/thinkphp/public/kind.php/index/readylogin/justlogin.html [运行时间：0.260365s][吞吐率：3.84req/s] [内存消耗：574.91kb] [文件加载：48]
+[ info ] [ LANG ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'readylogin',
+    2 => 'justlogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '32',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1:8080',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8080/kind/thinkphp/public/kind.php/index/readylogin/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'teacher',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Readylogin->justlogin[ D:\UPUPW_AP5.6\htdocs\kind\thinkphp\application\index\controller\Readylogin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032505s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.022177s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.005318s ]
+
+---------------------------------------------------------------
+[ 2017-09-26T12:47:58+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/kind.php/index/shuaige/index.html
+[ log ] 127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/index.html [运行时间：0.307547s][吞吐率：3.25req/s] [内存消耗：639.12kb] [文件加载：56]
+[ info ] [ LANG ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8080/kind/thinkphp/public/kind.php/index/readylogin/justlogin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=go40k51oeh064mkuldcdjb5pb1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->index[ D:\UPUPW_AP5.6\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\public/../application/index\view\shuaige\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030438s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.028111s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000850s ]
+
+---------------------------------------------------------------
+[ 2017-09-26T12:48:03+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/kind.php/index/shuaige/lookstu
+[ log ] 127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/lookstu [运行时间：0.454133s][吞吐率：2.20req/s] [内存消耗：662.66kb] [文件加载：56]
+[ info ] [ LANG ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'lookstu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=go40k51oeh064mkuldcdjb5pb1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->lookstu[ D:\UPUPW_AP5.6\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\public/../application/index\view\shuaige\lookstu.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.169187s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.027888s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.001081s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `classss` [ RunTime:0.001628s ]
+[ sql ] [ SQL ] SELECT * FROM `classss` [ RunTime:0.000788s ]
+
+---------------------------------------------------------------
+[ 2017-09-26T12:48:11+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/kind.php/index/shuaige/kaoshichengji
+[ log ] 127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/kaoshichengji [运行时间：0.318026s][吞吐率：3.14req/s] [内存消耗：634.02kb] [文件加载：55]
+[ info ] [ LANG ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'kaoshichengji',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=go40k51oeh064mkuldcdjb5pb1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->kaoshichengji[ D:\UPUPW_AP5.6\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\public/../application/index\view\shuaige\kaoshichengji.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.088527s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.027906s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.001019s ]
+
+---------------------------------------------------------------
+[ 2017-09-26T12:48:21+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/kind.php/index/shuaige/upach
+[ log ] 127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/upach [运行时间：0.957998s][吞吐率：1.04req/s] [内存消耗：1,784.92kb] [文件加载：105]
+[ info ] [ LANG ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upach',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '14560',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryazEujjz1orZYB2nb',
+  'referer' => 'http://127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=go40k51oeh064mkuldcdjb5pb1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upach[ D:\UPUPW_AP5.6\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013763s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.038814s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000800s ]
+
+---------------------------------------------------------------
+[ 2017-09-26T12:48:35+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/kind.php/index/shuaige/upach
+[ log ] 127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/upach [运行时间：0.916548s][吞吐率：1.09req/s] [内存消耗：2,704.24kb] [文件加载：106]
+[ info ] [ LANG ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'upach',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '90315',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryVLAYihj0sF8oSVvR',
+  'referer' => 'http://127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=go40k51oeh064mkuldcdjb5pb1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->upach[ D:\UPUPW_AP5.6\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021697s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.025256s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.001177s ]
+
+---------------------------------------------------------------
+[ 2017-09-26T12:48:40+08:00 ] 127.0.0.1 127.0.0.1 POST /kind/thinkphp/public/kind.php/index/shuaige/kaoshichengjiapi
+[ log ] 127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/kaoshichengjiapi [运行时间：2.899545s][吞吐率：0.34req/s] [内存消耗：2,542.77kb] [文件加载：102]
+[ info ] [ LANG ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'kaoshichengjiapi',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '9',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1:8080',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=go40k51oeh064mkuldcdjb5pb1',
+)
+[ info ] [ PARAM ] array (
+  'sure' => 'sure',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->kaoshichengjiapi[ D:\UPUPW_AP5.6\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034950s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.161416s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `totalmark` [ RunTime:0.018520s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '陈楚' [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '陈楚' [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `allstudent` [ RunTime:0.002158s ]
+[ sql ] [ SQL ] SELECT * FROM `allstudent` WHERE  `stuname` = '陈楚' [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '何绮婷' [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '何绮婷' [ RunTime:0.000362s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=58  WHERE  `stuname` = '何绮婷' [ RunTime:0.137433s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '梁嘉颖' [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '梁嘉颖' [ RunTime:0.000421s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=72  WHERE  `stuname` = '梁嘉颖' [ RunTime:0.082908s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '黄凯莉' [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '黄凯莉' [ RunTime:0.000438s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=80  WHERE  `stuname` = '黄凯莉' [ RunTime:0.051886s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '吴宏莉' [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '吴宏莉' [ RunTime:0.000466s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=72  WHERE  `stuname` = '吴宏莉' [ RunTime:0.062108s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '周晓琳' [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '何羽辰' [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '何羽辰' [ RunTime:0.000393s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=71  WHERE  `stuname` = '何羽辰' [ RunTime:0.068050s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '姚懿恩' [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '姚懿恩' [ RunTime:0.000399s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=79  WHERE  `stuname` = '姚懿恩' [ RunTime:0.075220s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '石诗颖' [ RunTime:0.000838s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '石诗颖' [ RunTime:0.000432s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=70  WHERE  `stuname` = '石诗颖' [ RunTime:0.064075s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '洪泽凡' [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '洪泽凡' [ RunTime:0.000414s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=66  WHERE  `stuname` = '洪泽凡' [ RunTime:0.026476s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '王紫荆' [ RunTime:0.032953s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '王紫荆' [ RunTime:0.000637s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=73  WHERE  `stuname` = '王紫荆' [ RunTime:0.044660s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '谢梦琪' [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '谢梦琪' [ RunTime:0.000472s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=60  WHERE  `stuname` = '谢梦琪' [ RunTime:0.050728s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '黄婵屏' [ RunTime:0.000999s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '黄婵屏' [ RunTime:0.000618s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=48  WHERE  `stuname` = '黄婵屏' [ RunTime:0.067731s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '甘尧静' [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '甘尧静' [ RunTime:0.000398s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=60  WHERE  `stuname` = '甘尧静' [ RunTime:0.075314s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '郝然' [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '郝然' [ RunTime:0.000496s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=75  WHERE  `stuname` = '郝然' [ RunTime:0.074936s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '谷龙' [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '谷龙' [ RunTime:0.000413s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=61  WHERE  `stuname` = '谷龙' [ RunTime:0.064142s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '罗景铁' [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '罗景铁' [ RunTime:0.000399s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=68  WHERE  `stuname` = '罗景铁' [ RunTime:0.064257s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '刘嘉伟' [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '刘嘉伟' [ RunTime:0.000398s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=69  WHERE  `stuname` = '刘嘉伟' [ RunTime:0.064239s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '王俊' [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '王俊' [ RunTime:0.000413s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=55  WHERE  `stuname` = '王俊' [ RunTime:0.064327s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '黄任鎧' [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '黄任鎧' [ RunTime:0.000432s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=62  WHERE  `stuname` = '黄任鎧' [ RunTime:0.074909s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '姚壮铎' [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '姚壮铎' [ RunTime:0.000419s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=62  WHERE  `stuname` = '姚壮铎' [ RunTime:0.075183s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '王建雄' [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '王建雄' [ RunTime:0.000398s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=57  WHERE  `stuname` = '王建雄' [ RunTime:0.086238s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '张伟良' [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '张伟良' [ RunTime:0.000469s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=60  WHERE  `stuname` = '张伟良' [ RunTime:0.063793s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '曾文豪' [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '曾文豪' [ RunTime:0.000401s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=63  WHERE  `stuname` = '曾文豪' [ RunTime:0.075443s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '陈栩杭' [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '陈栩杭' [ RunTime:0.000520s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=67  WHERE  `stuname` = '陈栩杭' [ RunTime:0.028089s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '徐东欣' [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '徐东欣' [ RunTime:0.000407s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=47  WHERE  `stuname` = '徐东欣' [ RunTime:0.051054s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '朱慕定' [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '朱慕定' [ RunTime:0.000528s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=68  WHERE  `stuname` = '朱慕定' [ RunTime:0.091185s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '许婕' [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '许婕' [ RunTime:0.000405s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=69  WHERE  `stuname` = '许婕' [ RunTime:0.063380s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '朱兰君' [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '朱兰君' [ RunTime:0.000420s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=68  WHERE  `stuname` = '朱兰君' [ RunTime:0.028640s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '纪孝豪' [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '纪孝豪' [ RunTime:0.000392s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=67  WHERE  `stuname` = '纪孝豪' [ RunTime:0.088710s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '葛清清' [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '葛清清' [ RunTime:0.000485s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=58  WHERE  `stuname` = '葛清清' [ RunTime:0.028274s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '徐宸' [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '陈楚' [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '陈楚' [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT * FROM `allstudent` WHERE  `stuname` = '陈楚' [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '何绮婷' [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '何绮婷' [ RunTime:0.000400s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=70  WHERE  `stuname` = '何绮婷' [ RunTime:0.058679s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '梁嘉颖' [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '梁嘉颖' [ RunTime:0.000465s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=75  WHERE  `stuname` = '梁嘉颖' [ RunTime:0.035016s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '黄凯莉' [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '黄凯莉' [ RunTime:0.000384s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=71  WHERE  `stuname` = '黄凯莉' [ RunTime:0.026471s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '吴宏莉' [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '吴宏莉' [ RunTime:0.000380s ]
+[ sql ] [ SQL ] UPDATE `totalmark`  SET `exam_grade`=82  WHERE  `stuname` = '吴宏莉' [ RunTime:0.035481s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '周晓琳' [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '程泳珊' [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '王斯敏' [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '郑嘉敏' [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '林少娟' [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '苏文懿' [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '冯敏桦' [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '李绮羿' [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SELECT * FROM `totalmark` WHERE  `stuname` = '陈芷莹' [ RunTime:0.000447s ]
+
+---------------------------------------------------------------
+[ 2017-09-26T12:49:06+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/kind.php/index/shuaige/modify
+[ log ] 127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/modify [运行时间：0.558979s][吞吐率：1.79req/s] [内存消耗：670.61kb] [文件加载：57]
+[ info ] [ LANG ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'modify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=go40k51oeh064mkuldcdjb5pb1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->modify[ D:\UPUPW_AP5.6\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\public/../application/index\view\shuaige\modify.html [ array (
+  0 => 'data',
+  1 => 'next',
+  2 => 'pageNumber',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023892s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.088644s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.025921s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.031559s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY `id`  desc LIMIT 10,10 [ RunTime:0.001166s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY `id`  desc LIMIT 0,10 [ RunTime:0.000651s ]
+
+---------------------------------------------------------------
+[ 2017-09-26T12:49:08+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/kind.php/index/shuaige/index1
+[ log ] 127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/index1 [运行时间：0.965642s][吞吐率：1.04req/s] [内存消耗：635.20kb] [文件加载：55]
+[ info ] [ LANG ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'index1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=go40k51oeh064mkuldcdjb5pb1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->index1[ D:\UPUPW_AP5.6\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\public/../application/index\view\shuaige\index1.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.028197s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.009118s ]
+
+---------------------------------------------------------------
+[ 2017-09-26T12:49:14+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/kind.php/index/shuaige/chosecu
+[ log ] 127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/chosecu [运行时间：0.346165s][吞吐率：2.89req/s] [内存消耗：671.79kb] [文件加载：57]
+[ info ] [ LANG ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'chosecu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=go40k51oeh064mkuldcdjb5pb1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->chosecu[ D:\UPUPW_AP5.6\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\public/../application/index\view\shuaige\chosecu.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'nextstate',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006594s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.061523s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000957s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `curriculum` [ RunTime:0.033768s ]
+[ sql ] [ SQL ] SELECT * FROM `curriculum` ORDER BY `id`  desc LIMIT 10,10 [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT * FROM `curriculum` ORDER BY `id`  desc LIMIT 0,10 [ RunTime:0.000653s ]
+
+---------------------------------------------------------------
+[ 2017-09-26T12:49:16+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/kind.php/index/shuaige/addcu
+[ log ] 127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/addcu [运行时间：0.613443s][吞吐率：1.63req/s] [内存消耗：633.93kb] [文件加载：55]
+[ info ] [ LANG ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'addcu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=go40k51oeh064mkuldcdjb5pb1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->addcu[ D:\UPUPW_AP5.6\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\public/../application/index\view\shuaige\addcu.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081605s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.334641s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.003733s ]
+
+---------------------------------------------------------------
+[ 2017-09-26T12:49:42+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/kind.php/index/shuaige/chosecu
+[ log ] 127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/chosecu [运行时间：0.331938s][吞吐率：3.01req/s] [内存消耗：671.79kb] [文件加载：57]
+[ info ] [ LANG ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'chosecu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=go40k51oeh064mkuldcdjb5pb1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->chosecu[ D:\UPUPW_AP5.6\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\public/../application/index\view\shuaige\chosecu.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'nextstate',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.074068s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.029104s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `curriculum` [ RunTime:0.024387s ]
+[ sql ] [ SQL ] SELECT * FROM `curriculum` ORDER BY `id`  desc LIMIT 10,10 [ RunTime:0.002014s ]
+[ sql ] [ SQL ] SELECT * FROM `curriculum` ORDER BY `id`  desc LIMIT 0,10 [ RunTime:0.001041s ]
+
+---------------------------------------------------------------
+[ 2017-09-26T12:49:45+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/kind.php/index/shuaige/addcu
+[ log ] 127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/addcu [运行时间：0.352531s][吞吐率：2.84req/s] [内存消耗：633.93kb] [文件加载：55]
+[ info ] [ LANG ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'addcu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=go40k51oeh064mkuldcdjb5pb1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->addcu[ D:\UPUPW_AP5.6\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\public/../application/index\view\shuaige\addcu.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.037416s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.070619s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.026210s ]
+
+---------------------------------------------------------------
+[ 2017-09-26T12:49:50+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/kind.php/index/shuaige/showkecheng
+[ log ] 127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/showkecheng [运行时间：0.609801s][吞吐率：1.64req/s] [内存消耗：1,657.99kb] [文件加载：111]
+[ info ] [ LANG ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'showkecheng',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=go40k51oeh064mkuldcdjb5pb1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->showkecheng[ D:\UPUPW_AP5.6\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\public/../application/index\view\shuaige\showkecheng.html [ array (
+  0 => 'data',
+  1 => 'hang',
+  2 => 'line',
+  3 => 'sheetData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014611s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.029702s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `curriculum` [ RunTime:0.022152s ]
+[ sql ] [ SQL ] SELECT * FROM `curriculum` WHERE  `state` = 1 [ RunTime:0.010377s ]
+
+---------------------------------------------------------------
+[ 2017-09-26T12:49:53+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/kind.php/index/shuaige/chosecu
+[ log ] 127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/chosecu [运行时间：0.273606s][吞吐率：3.65req/s] [内存消耗：671.79kb] [文件加载：57]
+[ info ] [ LANG ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shuaige',
+    2 => 'chosecu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'referer' => 'http://127.0.0.1:8080/kind/thinkphp/public/kind.php/index/shuaige/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=go40k51oeh064mkuldcdjb5pb1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\shuaige->chosecu[ D:\UPUPW_AP5.6\htdocs\kind\thinkphp\application\index\controller\Shuaige.php ]
+[ info ] [ VIEW ] D:\UPUPW_AP5.6\htdocs\kind\thinkphp\public/../application/index\view\shuaige\chosecu.html [ array (
+  0 => 'data',
+  1 => 'page',
+  2 => 'nextstate',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027152s ] mysql:dbname=kind;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.025688s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'teacher'  AND `password` = '123456' [ RunTime:0.014012s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `curriculum` [ RunTime:0.006913s ]
+[ sql ] [ SQL ] SELECT * FROM `curriculum` ORDER BY `id`  desc LIMIT 10,10 [ RunTime:0.009948s ]
+[ sql ] [ SQL ] SELECT * FROM `curriculum` ORDER BY `id`  desc LIMIT 0,10 [ RunTime:0.000635s ]
+
+---------------------------------------------------------------

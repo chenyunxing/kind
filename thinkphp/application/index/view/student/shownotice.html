@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>公告</title>
+	<style>
+		/*顶部样式*/
+		#head{
+			padding: 0% 0 1% 0%;
+		}
+		#logo{
+			/*width: 50%;*/
+		}
+		#logo img{
+			width: 60%;
+		}
+		*{
+			margin:0;
+			padding:0;
+			font-family: "微软雅黑";
+		}
+		#wrap_content{
+			overflow: hidden;
+			width: 100%;
+			height: 75%;
+			background: url('__ROOT__/static/imgage/background.jpg') no-repeat;
+			background-size:cover;		
+		}
+		#content{
+			margin:0 auto 10px;
+			width: 75%;
+			background:#eee;
+			padding: 0 5% 0 5%;
+		}
+		#title{
+			margin:10px auto;
+		}
+		h3{
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		hr{
+			height:2px;
+			border:none;
+			box-shadow:2px 2px 5px rgba(0,0,0,.3);
+		}
+		footer{
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript" charset="utf-8" src="__ROOT__/static/js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<header id="head">
+		<a  href="index.html">
+			<div id="logo">
+				<img border="0" src="__ROOT__/static/imgage/title.png">
+			</div>
+		</a>
+	</header>
+	<div id="wrap_content">
+		
+		<div id="content">
+			<div id="title">
+				<h3>{$data[0]['title']}</h3>
+				<hr>
+			</div>
+			{$data[0]['content']}
+		</div>
+	</div>
+	<footer>
+		<div id="copy">
+			<p>Copyright &copy; 2016-2017 华南理工大学广州学院机械工程学院 版权所有 <br>网站联系人 ：童州 &nbsp;&nbsp;&nbsp;联系电话：36903100</p>
+		</div>
+	</footer>
+	<script>
+	$(document).ready(function(){
+		var imglist=$("#content").find('img');
+		var contentwidth=$('#content').width();
+		imglist.each(function(){
+			if($(this).width()>contentwidth){
+				$(this).width('100%');
+			};
+		});
+	});
+	</script>
+</body>
+</html>

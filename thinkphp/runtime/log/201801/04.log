@@ -1,0 +1,29 @@
+[ 2018-01-04T10:07:08+08:00 ] 127.0.0.1 127.0.0.1 GET /kind/thinkphp/public/kind.php/index/readylogin/
+[ log ] 127.0.0.1/kind/thinkphp/public/kind.php/index/readylogin/ [运行时间：0.045599s][吞吐率：21.93req/s] [内存消耗：1,536.25kb] [文件加载：45]
+[ info ] [ LANG ] D:\web\htdocs\kind\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'readylogin',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Readylogin->index[ D:\web\htdocs\kind\thinkphp\application\index\controller\Readylogin.php ]
+[ info ] [ VIEW ] D:\web\htdocs\kind\thinkphp\public/../application/index\view\readylogin\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
