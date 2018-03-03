@@ -1,7 +1,7 @@
 <?php 
 namespace app\index\model;
 use think\Model;
-class Allstudent_backup extends Model
+class Allstudentbackup extends Model
 {
 	protected $connection = [
 		// 数据库类型
@@ -9,7 +9,7 @@ class Allstudent_backup extends Model
 		// 服务器地址
 		'hostname'        => '127.0.0.1',
 		// 数据库名
-		'database'        => 'kind_backup',
+		'database'        => 'kindbackup',
 		// 用户名
 		'username'        => 'root',
 		// 密码
@@ -24,7 +24,7 @@ class Allstudent_backup extends Model
 		'charset'         => 'utf8',
 		// 数据库表前缀
 		'prefix'          => '',
-	]
+	];
 	public function addstudent($Xstu,$stunum,$stuname,$sex,$classname)
 	{
 		// $addstudent = new Addstudent;

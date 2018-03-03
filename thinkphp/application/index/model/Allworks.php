@@ -34,7 +34,7 @@ class Allworks extends Model
 	}
 	public function updateone($stunum,$data)
 	{
-		$this->save($data,['id' => 1]);
+		$this->save($data,['id' => $stunum]);
 		// $this->where('stunum',$stunum)->update($data);
 	}
 }

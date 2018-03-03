@@ -1,7 +1,7 @@
 <?php 
 namespace app\index\model;
 use think\Model;
-class Singlegrade_backup extends Model
+class Classssbackup extends Model
 {
 	protected $connection = [
 		// 数据库类型
@@ -9,7 +9,7 @@ class Singlegrade_backup extends Model
 		// 服务器地址
 		'hostname'        => '127.0.0.1',
 		// 数据库名
-		'database'        => 'kind_backup',
+		'database'        => 'kindbackup',
 		// 用户名
 		'username'        => 'root',
 		// 密码
@@ -24,18 +24,13 @@ class Singlegrade_backup extends Model
 		'charset'         => 'utf8',
 		// 数据库表前缀
 		'prefix'          => '',
-	]
-	public function addsinglegrade($Xstu,$stunum,$grade,$txt,$re_grade,$work)
+	];
+	public function addclass($classname,$allS)
 	{
 		// $addstudent = new Addstudent;
 		// $data['id'] = NULL;
-
-		$data['Xstu'] = $Xstu;
-		$data['stunum'] = $stunum;
-		$data['grade'] = $grade;
-		$data['txt'] = $txt;
-		$data['re_grade']=$re_grade;
-		$data['work']=$work;
+		$data['classname'] = $classname;
+		$data['allS'] = $allS;
 		$this->data($data,true)->isUpdate(false)->save();
 		// $this->id=NULL;
 		// $addstudent->Xstu = $Xstu;
@@ -46,26 +41,22 @@ class Singlegrade_backup extends Model
 		// 获取自增ID
 		// echo $this->id;
 	}
-	public function changesingle($stunum,$txt,$grade,$re_grade,$work)
-	{
-		
-		$this->where(array('stunum'=>$stunum,'work'=>$work))->update(['re_grade'=>$re_grade,'txt'=>$txt,'grade'=>$grade]);
-	}
-	public function deleteone($stunum){
-		$data['stunum'] = $stunum;
-		return $this->where($data)->delete();
-	}
-
-
-		public function done($zzz)
-	{
-		
-	}
-
-		public function returnall()
+	//返回所有班级信息
+	public function returnall()
 	{
 		 return $this->select();
-		
+	}
+	//返回一个班的班级信息,传入参数为班级id
+	public function returnone($id)
+	{
+		$data['id']=$id;
+		return $this->where($data)->select();
+	}
+	//删除班级
+	public function deleteone($id)
+	{
+		$data['id']=$id;
+		return $this->where($data)->delete();
 	}
 }
 

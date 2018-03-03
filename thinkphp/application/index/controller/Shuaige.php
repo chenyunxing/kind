@@ -740,7 +740,9 @@ use think\Db;
 		public function datain(){
 			// 获取表单上传文件 例如上传了001.jpg
 			$file = request()->file('file');
-			if ($_FILES['file']['type']=="application/vnd.ms-excel") {
+			$type = explode('.',$_FILES['file']['name']);
+			$type = $type[count($type)-1];
+			if ($type=="xls") {
 				// 移动到框架应用根目录/public/uploads/ 目录下
 				$info = $file->move(ROOT_PATH . 'public' . DS . 'uploads','1');
 				if($info){
@@ -857,8 +859,9 @@ use think\Db;
 		//学生上传文件对应接口，返回预览数据
 		function upstu(){
 			$file = request()->file('file');
-			//将文件保存起来
-			if ($_FILES['file']['type']=="application/vnd.ms-excel") {
+			$type = explode('.',$_FILES['file']['name']);
+			$type = $type[count($type)-1];
+			if ($type=="xls") {
 				// 移动到框架应用根目录/public/uploads/ 目录下
 				$info = $file->move(ROOT_PATH . 'public' . DS . 'uploads'. DS .'student','1');
 			}else{
@@ -988,7 +991,7 @@ use think\Db;
 
 				$allworks=model('allworks');
 
-				$totalmark=model('totalmark_backup');;
+				$totalmark=model('totalmark');;
 			   // echo $allstudent->count();
 			   //  echo $addclass->count();
 				for ($i=4,$z=1; $i <= $highestRow; $i++,$z++) { 
@@ -1066,8 +1069,8 @@ use think\Db;
 			//开始遍历删除
 			$classss->deleteone($id);
 			$allstudent->deleteclass($cdata[0]['classname']);
-			$totalmark=model('totalmark_backup');;
-			$singlegrade=model('singlegrade_backup');;
+			$totalmark=model('totalmark');;
+			$singlegrade=model('singlegrade');;
 			$allworks=model('allworks');
 			for ($i=0; $i < count($sdata); $i++) { 
 				$totalmark->deleteone($sdata[$i]['stunum']);
@@ -1086,7 +1089,9 @@ use think\Db;
 		function upach(){
 			$file = request()->file('file');
 			//将文件保存起来
-			if ($_FILES['file']['type']=="application/vnd.ms-excel") {
+			$type = explode('.',$_FILES['file']['name']);
+			$type = $type[count($type)-1];
+			if ($type=="xls") {
 				// 移动到框架应用根目录/public/uploads/ 目录下
 				$info = $file->move(ROOT_PATH . 'public' . DS . 'uploads'. DS .'chengji','1');
 			}else{
@@ -1207,7 +1212,7 @@ use think\Db;
 					$excelData[$row][] =(string)$objWorksheet->getCellByColumnAndRow($col, $row)->getValue();
 				} 
 			}
-			$Single=model('singlegrade_backup');;
+			$Single=model('singlegrade');;
 			$allworks=model('allworks');
 			$Work= $_POST['gongzhong'];
 
@@ -1313,7 +1318,7 @@ use think\Db;
 						$excelData[$row][] =(string)$objWorksheet->getCellByColumnAndRow($col, $row)->getValue();
 					} 
 				}
-				$totalmark=model('totalmark_backup');;
+				$totalmark=model('totalmark');;
 				for ($i=0,$f=0,$z=3; $i < ($highestRow-1)*2; $i++,$z++) { 
 					$Xstu=$excelData[$z][1+($f*9)];
 					$stunum=$excelData[$z][2+($f*9)];
@@ -1525,7 +1530,7 @@ use think\Db;
 					$excelData[$row][] =(string)$objWorksheet->getCellByColumnAndRow($col, $row)->getValue();
 				} 
 			}
-			$Single=model('singlegrade_backup');;
+			$Single=model('singlegrade');;
 			$allworks=model('allworks');
 			$Work=$gongzhong;
 			$xuanxiu=-1;
@@ -1610,7 +1615,7 @@ use think\Db;
 				return 400;
 			}
 			$allworks=model('allworks');
-			$totalmark=model('totalmark_backup');;
+			$totalmark=model('totalmark');;
 			$zzz=$allworks->returnall();
 			$n=$allworks->count();
 			$k=$totalmark->count();
@@ -1940,18 +1945,40 @@ use think\Db;
 		}
 		//清除数据库接口
 		function clear(){
-			$database=Config::get('database');
+			$database=[
+				// 数据库类型
+				'type'        => 'mysql',
+				// 数据库连接DSN配置
+				'dsn'         => '',
+				// 服务器地址
+				'hostname'    => '127.0.0.1',
+				// 数据库名
+				'database'    => 'kindbackup',
+				// 数据库用户名
+				'username'    => 'root',
+				// 数据库密码
+				'password'    => 'root',
+				// 数据库连接端口
+				'hostport'    => '3306',
+				// 数据库连接参数
+				'params'      => [],
+				// 数据库编码默认采用utf8
+				'charset'     => 'utf8',
+				// 数据库表前缀
+				'prefix'      => '',
+			];
+			// $database=Config::get('database');
 			$cfg_dbhost = $database['hostname'];
 			$cfg_dbname = $database['database'];
 			$cfg_dbuser = $database['username'];
 			$cfg_dbpwd = $database['password'];
 			$mysqli = new \mysqli($cfg_dbhost, $cfg_dbuser,$cfg_dbpwd,$cfg_dbname);
 			mysqli_query($mysqli,"SET NAMES 'UTF8'");
-			$sql1= "TRUNCATE TABLE allstudent;";
-			$sql2= "TRUNCATE TABLE allworks;";
-			$sql3= "TRUNCATE TABLE classss;";
-			$sql4= "TRUNCATE TABLE singlegrade;";
-			$sql5= "TRUNCATE TABLE totalmark;";
+			$sql1= "TRUNCATE TABLE allstudentbackup;";
+			$sql2= "TRUNCATE TABLE allworksbackup;";
+			$sql3= "TRUNCATE TABLE classssbackup;";
+			$sql4= "TRUNCATE TABLE singlegradebackup;";
+			$sql5= "TRUNCATE TABLE totalmarkbackup;";
 			//拼接的方法不好使 只能一个个来
 			$flag=5;
 			if(mysqli_query($mysqli,$sql1)){$flag--;}
@@ -2004,7 +2031,7 @@ use think\Db;
 			header("Content-Type: text/html; charset=utf8");
 			$database=Config::get('database');
 			$cfg_dbhost = $database['hostname'];
-			$cfg_dbname = 'kind_backup';
+			$cfg_dbname = 'kindbackup';
 			$cfg_dbuser = $database['username'];
 			$cfg_dbpwd = $database['password'];
 			$file_name = $name;
@@ -2077,7 +2104,7 @@ use think\Db;
 			// 	$classss=model('classss');
 			// 	$cdata=$classss->returnone($id);
 			// 	$allstudent=model('allstudent');
-			// 	$totalmark=model('totalmark_backup');;
+			// 	$totalmark=model('totalmark');;
 			// 	$sdata=$allstudent->returnone($cdata[0]['classname']);
 			// 	//进行导入excel
 			// 	vendor("PHPExcel.Classes.PHPExcel");
@@ -2284,7 +2311,7 @@ use think\Db;
 			$classss=model('classss');
 			$cdata=$classss->returnone($id);
 			$allstudent=model('allstudent');
-			$totalmark=model('totalmark_backup');;
+			$totalmark=model('totalmark');;
 			$sdata=$allstudent->returnone($cdata[0]['classname']);
 			//进行导入excel
 			vendor("PHPExcel.Classes.PHPExcel");
@@ -2428,7 +2455,7 @@ use think\Db;
 			// 	$classss=model('classss');
 			// 	$cdata=$classss->returnone($id);
 			// 	$allstudent=model('allstudent');
-			// 	$totalmark=model('totalmark_backup');;
+			// 	$totalmark=model('totalmark');;
 			// 	$sdata=$allstudent->returnone($cdata[0]['classname']);
 			// 	//进行导入excel
 			// 	vendor("PHPExcel.Classes.PHPExcel");
@@ -2694,7 +2721,7 @@ use think\Db;
 			$objPHPExcel->getActiveSheet()->getStyle('A35')->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
 			$objPHPExcel->setActiveSheetIndex(0)->setCellValue('A35','（注：平时70%，考试20%，报告10%）');
 			//制作内容栏
-			$totalmark=model('totalmark_backup');;
+			$totalmark=model('totalmark');;
 			//$i代表数据位于哪条,$f代表属于第一还是第二列,$z代表当前指针位于哪一行
 			for ($i=0,$f=0,$z=3; $i < count($sdata); $i++,$z++) { 
 				if($z==35){
@@ -2771,7 +2798,7 @@ use think\Db;
 			// 创建数组存储数据
 			$excelData = array(); 
 			$allstudent=model('allstudent');
-			$totalmark=model('totalmark_backup');;
+			$totalmark=model('totalmark');;
 			$redata['content']='';
 			//创建返回数据
 			$redata['content']=$redata['content'].'<tr><td>姓名</td><td>性别</td><td>班级</td><td>学号</td><td>错误原因</td></tr>';
@@ -2964,9 +2991,9 @@ use think\Db;
 			if($data!=''){
 				$datalist=explode(':#:',$data);
 				unset($datalist[count($datalist)-1]);
-				for ($i=0; $i < count($datalist)/2; $i++) { 
+				for ($i=0; $i < count($datalist)/2; $i++) {
 					$data1[$datalist[$i*2]]=$datalist[($i*2+1)];
-					$allworks->updateone($id,$data1);
+					echo $allworks->updateone($id,$data1);
 				}
 				return $datalist;
 			}else{

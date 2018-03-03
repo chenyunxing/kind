@@ -330,7 +330,7 @@ use think\Db;
 			}
 			$charactors = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
 			$z=0;
-			$allstudent=model('allstudent_backup');
+			$allstudent=model('allstudentbackup');
 			$sdata=$allstudent->select();
 			for ($i=0; $i <count($grouppeople) ; $i++) { 
 				for ($f=0; $f < $grouppeople[$i]; $f++) { 
@@ -342,7 +342,7 @@ use think\Db;
 		}
 		//分组的页面
 		public function group(){
-			$classss=model('classss_backup');
+			$classss=model('classssbackup');
 			$data=$classss->returnall();
 			$view = new View();
 			$view->data = $data;
@@ -359,7 +359,7 @@ use think\Db;
 		}
 		//修改分组的页面
 		public function changegroup(){
-			$classss=model('classss_backup');
+			$classss=model('classssbackup');
 			$data=$classss->returnall();
 			$view = new View();
 			$view->data = $data;
@@ -375,9 +375,9 @@ use think\Db;
 				return;
 			}
 			//获取所有学生与班级信息
-			$classss=model('classss_backup');
+			$classss=model('classssbackup');
 			$cdata=$classss->returnone($id);
-			$allstudent=model('allstudent_backup');
+			$allstudent=model('allstudentbackup');
 			$sdata=$allstudent->returnone($cdata[0]['classname']);
 			//进行导入excel
 			vendor("PHPExcel.Classes.PHPExcel");
@@ -548,9 +548,9 @@ use think\Db;
 				return;
 			}
 			//获取所有学生与班级信息
-			$classss=model('classss_backup');
+			$classss=model('classssbackup');
 			$cdata=$classss->returnone($id);
-			$allstudent=model('allstudent_backup');
+			$allstudent=model('allstudentbackup');
 			$sdata=$allstudent->returnone($cdata[0]['classname']);
 			//进行导入excel
 			vendor("PHPExcel.Classes.PHPExcel");
@@ -740,7 +740,9 @@ use think\Db;
 		public function datain(){
 			// 获取表单上传文件 例如上传了001.jpg
 			$file = request()->file('file');
-			if ($_FILES['file']['type']=="application/vnd.ms-excel") {
+			$type = explode('.',$_FILES['file']['name']);
+			$type = $type[count($type)-1];
+			if ($type=="xls") {
 				// 移动到框架应用根目录/public/uploads/ 目录下
 				$info = $file->move(ROOT_PATH . 'public' . DS . 'uploads','1');
 				if($info){
@@ -770,7 +772,7 @@ use think\Db;
 							$excelData[$row][] =(string)$objWorksheet->getCellByColumnAndRow($col, $row)->getValue();
 						} 
 					}
-					$allstudent =model('allstudent_backup');
+					$allstudent =model('allstudentbackup');
 					for ($i=1; $i <=2 ; $i++) { 
 						for ($f=3; $f <35 ; $f++) {
 							if($i==1){
@@ -807,7 +809,7 @@ use think\Db;
 		}
 		//导出成绩模板界面
 		public function template(){
-			$classss=model('classss_backup');
+			$classss=model('classssbackup');
 			$data=$classss->returnall();
 			$view = new View();
 			$view->data = $data;
@@ -858,7 +860,9 @@ use think\Db;
 		function upstu(){
 			$file = request()->file('file');
 			//将文件保存起来
-			if ($_FILES['file']['type']=="application/vnd.ms-excel") {
+			$type = explode('.',$_FILES['file']['name']);
+			$type = $type[count($type)-1];
+			if ($type=="xls") {
 				// 移动到框架应用根目录/public/uploads/ 目录下
 				$info = $file->move(ROOT_PATH . 'public' . DS . 'uploads'. DS .'student','1');
 			}else{
@@ -982,13 +986,13 @@ use think\Db;
 				}
 				// $classname=substr($excelData[1][0],0,strlen($excelData[1][0])-9);; 
 				// $classname="ada";
-				$allstudent =model('allstudent_backup');
+				$allstudent =model('allstudentbackup');
 			   
 				$addclass =model('classss_backup');
 
-				$allworks=model('allworks');
+				$allworks=model('allworksbackup');
 
-				$totalmark=model('totalmark');
+				$totalmark=model('totalmarkbackup');
 			   // echo $allstudent->count();
 			   //  echo $addclass->count();
 				for ($i=4,$z=1; $i <= $highestRow; $i++,$z++) { 
@@ -1013,7 +1017,7 @@ use think\Db;
 		}
 		//查看学生信息页面
 		function lookstu(){
-			$classss=model('classss_backup');
+			$classss=model('classssbackup');
 			$data=$classss->returnall();
 			$view = new View();
 			$view->data = $data;
@@ -1030,9 +1034,9 @@ use think\Db;
 				return $data;
 			}
 			//获取所有学生与班级信息
-			$classss=model('classss_backup');
+			$classss=model('classssbackup');
 			$cdata=$classss->returnone($id);
-			$allstudent=model('allstudent_backup');
+			$allstudent=model('allstudentbackup');
 			$sdata=$allstudent->returnone($cdata[0]['classname']);
 			$data['content']='';
 			for ($i=0; $i < count($sdata); $i++) { 
@@ -1059,16 +1063,16 @@ use think\Db;
 				return $data;
 			}
 			//获取所有学生与班级信息
-			$classss=model('classss_backup');
+			$classss=model('classssbackup');
 			$cdata=$classss->returnone($id);
-			$allstudent=model('allstudent_backup');
+			$allstudent=model('allstudentbackup');
 			$sdata=$allstudent->returnone($cdata[0]['classname']);
 			//开始遍历删除
 			$classss->deleteone($id);
 			$allstudent->deleteclass($cdata[0]['classname']);
-			$totalmark=model('totalmark');
-			$singlegrade=model('singlegrade');
-			$allworks=model('allworks');
+			$totalmark=model('totalmarkbackup');
+			$singlegrade=model('singlegradebackup');
+			$allworks=model('allworksbackup');
 			for ($i=0; $i < count($sdata); $i++) { 
 				$totalmark->deleteone($sdata[$i]['stunum']);
 				$allworks->deleteone($sdata[$i]['stunum']);
@@ -1086,7 +1090,9 @@ use think\Db;
 		function upach(){
 			$file = request()->file('file');
 			//将文件保存起来
-			if ($_FILES['file']['type']=="application/vnd.ms-excel") {
+			$type = explode('.',$_FILES['file']['name']);
+			$type = $type[count($type)-1];
+			if ($type=="xls") {
 				// 移动到框架应用根目录/public/uploads/ 目录下
 				$info = $file->move(ROOT_PATH . 'public' . DS . 'uploads'. DS .'chengji','1');
 			}else{
@@ -1207,8 +1213,8 @@ use think\Db;
 					$excelData[$row][] =(string)$objWorksheet->getCellByColumnAndRow($col, $row)->getValue();
 				} 
 			}
-			$Single=model('singlegrade');
-			$allworks=model('allworks');
+			$Single=model('singlegradebackup');
+			$allworks=model('allworksbackup');
 			$Work= $_POST['gongzhong'];
 
 
@@ -1313,7 +1319,7 @@ use think\Db;
 						$excelData[$row][] =(string)$objWorksheet->getCellByColumnAndRow($col, $row)->getValue();
 					} 
 				}
-				$totalmark=model('totalmark');
+				$totalmark=model('totalmarkbackup');
 				for ($i=0,$f=0,$z=3; $i < ($highestRow-1)*2; $i++,$z++) { 
 					$Xstu=$excelData[$z][1+($f*9)];
 					$stunum=$excelData[$z][2+($f*9)];
@@ -1346,7 +1352,7 @@ use think\Db;
 		}
 		//修改单科成绩界面
 		function changeown(){
-			$classss=model('classss_backup');
+			$classss=model('classssbackup');
 			$data=$classss->returnall();
 			$view = new View();
 			$view->data = $data;
@@ -1359,9 +1365,9 @@ use think\Db;
 			$gongzhong=$postdata['gongzhong'];
 			$classid=$postdata['classid'];
 			//获取所有学生与班级信息
-			$classss=model('classss_backup');
+			$classss=model('classssbackup');
 			$cdata=$classss->returnone($classid);
-			$allstudent=model('allstudent_backup');
+			$allstudent=model('allstudentbackup');
 			$sdata=$allstudent->returnone($cdata[0]['classname']);
 			//进行导入excel
 			vendor("PHPExcel.Classes.PHPExcel");
@@ -1525,8 +1531,8 @@ use think\Db;
 					$excelData[$row][] =(string)$objWorksheet->getCellByColumnAndRow($col, $row)->getValue();
 				} 
 			}
-			$Single=model('singlegrade');
-			$allworks=model('allworks');
+			$Single=model('singlegradebackup');
+			$allworks=model('allworksbackup');
 			$Work=$gongzhong;
 			$xuanxiu=-1;
 			if($xuanxiu==0){
@@ -1596,7 +1602,7 @@ use think\Db;
 		}
 		//总结成绩页面
 		function summary(){
-			$classss=model('classss_backup');
+			$classss=model('classssbackup');
 			$data=$classss->returnall();
 			$view = new View();
 			$view->data = $data;
@@ -1609,8 +1615,8 @@ use think\Db;
 			if($postdata['data']!='sure'){
 				return 400;
 			}
-			$allworks=model('allworks');
-			$totalmark=model('totalmark');
+			$allworks=model('allworksbackup');
+			$totalmark=model('totalmarkbackup');
 			$zzz=$allworks->returnall();
 			$n=$allworks->count();
 			$k=$totalmark->count();
@@ -2074,10 +2080,10 @@ use think\Db;
 			// 		return;
 			// 	}
 			// 	//获取所有学生与班级信息
-			// 	$classss=model('classss_backup');
+			// 	$classss=model('classssbackup');
 			// 	$cdata=$classss->returnone($id);
-			// 	$allstudent=model('allstudent_backup');
-			// 	$totalmark=model('totalmark');
+			// 	$allstudent=model('allstudentbackup');
+			// 	$totalmark=model('totalmarkbackup');
 			// 	$sdata=$allstudent->returnone($cdata[0]['classname']);
 			// 	//进行导入excel
 			// 	vendor("PHPExcel.Classes.PHPExcel");
@@ -2281,10 +2287,10 @@ use think\Db;
 				return;
 			}
 			//获取所有学生与班级信息
-			$classss=model('classss_backup');
+			$classss=model('classssbackup');
 			$cdata=$classss->returnone($id);
-			$allstudent=model('allstudent_backup');
-			$totalmark=model('totalmark');
+			$allstudent=model('allstudentbackup');
+			$totalmark=model('totalmarkbackup');
 			$sdata=$allstudent->returnone($cdata[0]['classname']);
 			//进行导入excel
 			vendor("PHPExcel.Classes.PHPExcel");
@@ -2425,10 +2431,10 @@ use think\Db;
 			// 		return;
 			// 	}
 			// 	//获取所有学生与班级信息
-			// 	$classss=model('classss_backup');
+			// 	$classss=model('classssbackup');
 			// 	$cdata=$classss->returnone($id);
-			// 	$allstudent=model('allstudent_backup');
-			// 	$totalmark=model('totalmark');
+			// 	$allstudent=model('allstudentbackup');
+			// 	$totalmark=model('totalmarkbackup');
 			// 	$sdata=$allstudent->returnone($cdata[0]['classname']);
 			// 	//进行导入excel
 			// 	vendor("PHPExcel.Classes.PHPExcel");
@@ -2611,9 +2617,9 @@ use think\Db;
 				return;
 			}
 			//获取所有学生与班级信息
-			$classss=model('classss_backup');
+			$classss=model('classssbackup');
 			$cdata=$classss->returnone($id);
-			$allstudent=model('allstudent_backup');
+			$allstudent=model('allstudentbackup');
 			$sdata=$allstudent->returnone($cdata[0]['classname']);
 			//进行导入excel
 			vendor("PHPExcel.Classes.PHPExcel");
@@ -2694,7 +2700,7 @@ use think\Db;
 			$objPHPExcel->getActiveSheet()->getStyle('A35')->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
 			$objPHPExcel->setActiveSheetIndex(0)->setCellValue('A35','（注：平时70%，考试20%，报告10%）');
 			//制作内容栏
-			$totalmark=model('totalmark');
+			$totalmark=model('totalmarkbackup');
 			//$i代表数据位于哪条,$f代表属于第一还是第二列,$z代表当前指针位于哪一行
 			for ($i=0,$f=0,$z=3; $i < count($sdata); $i++,$z++) { 
 				if($z==35){
@@ -2770,8 +2776,8 @@ use think\Db;
 			$objPHPexcel = $objReader->load($filename);
 			// 创建数组存储数据
 			$excelData = array(); 
-			$allstudent=model('allstudent_backup');
-			$totalmark=model('totalmark');
+			$allstudent=model('allstudentbackup');
+			$totalmark=model('totalmarkbackup');
 			$redata['content']='';
 			//创建返回数据
 			$redata['content']=$redata['content'].'<tr><td>姓名</td><td>性别</td><td>班级</td><td>学号</td><td>错误原因</td></tr>';
@@ -2830,7 +2836,7 @@ use think\Db;
 			return $redata;
 		}
 		public function upchengjionline(){
-			$classss=model('classss_backup');
+			$classss=model('classssbackup');
 			$data=$classss->returnall();
 			$view = new View();
 			$view->data = $data;
@@ -2847,9 +2853,9 @@ use think\Db;
 		public function upchengjionlineapi(){
 			$request = request();
 			$id=$request->param('classid');
-			$classss=model('classss_backup');
-			$allworks=model('allworks');
-			$allstudent=model('allstudent_backup');
+			$classss=model('classssbackup');
+			$allworks=model('allworksbackup');
+			$allstudent=model('allstudentbackup');
 			$cdata=$classss->returnone($id);
 			$sdata=$allstudent->returnone($cdata[0]['classname']);
 			$duiying=array('Xstu'=>'学生序号','stunum'=>'学号','stuname'=>'学生姓名','Qian_gong'=>'钳工','Pu_xi'=>'普通铣削','Mo_xue'=>'磨削','Dian_huo_hua'=>'电火花','Chong_ya'=>'冲压','Zhu_zao'=>'铸造','Mu_ju'=>'模具','Han_jie'=>'焊接','Pu_che'=>'普通车削','Jia_gong'=>'加工','Shu_chong'=>'数控冲床','Shu_xi'=>'数控铣床','Shu_che'=>'数控车床','PLC'=>'PLC','Xian_qie_ge'=>'线切割','Kuai_su_cheng_xing'=>'快速成型','re_chu_li'=>'热处理');
@@ -2960,7 +2966,7 @@ use think\Db;
 			$request = request();
 			$id=$request->param('stuid');
 			$data=$request->param('data');
-			$allworks=model('allworks');
+			$allworks=model('allworksbackup');
 			if($data!=''){
 				$datalist=explode(':#:',$data);
 				unset($datalist[count($datalist)-1]);
