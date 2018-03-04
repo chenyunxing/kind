@@ -1111,7 +1111,7 @@ use think\Db;
 				$data['content']=$data['content']."<td>".'<button class="btn btn-success btn-sm pull-left" id="del'.$i.'"  value="'.$sdata[$i]['id'].'" >删除此学生</button>'."</td>";
 				$data['content']=$data['content']."</tr>";
 			}
-			$data['content']=$data['content'].'<button style="display:none" id="sendid"  value="'.$i.'" >删除此学生</button>';
+			$data['content']=$data['content'].'<tr style="display:none"><td><button id="sentid3" value="'.$i.'">num</button></td></tr>';
 			$data['state']=200;
 			return $data;
 		}

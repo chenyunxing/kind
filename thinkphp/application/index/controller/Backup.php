@@ -124,7 +124,7 @@ use think\Db;
 			if (intval($groupnum)<=0) {
 				return false;
 			}
-			$addclass =model('classss_backup');
+			$addclass =model('classssbackup');
 			$classdata=$addclass->returnall();
 			$num=$addclass->count();
 			for ($i=0; $i < $num; $i++) { 
@@ -988,7 +988,7 @@ use think\Db;
 				// $classname="ada";
 				$allstudent =model('allstudentbackup');
 			   
-				$addclass =model('classss_backup');
+				$addclass =model('classssbackup');
 
 				$allworks=model('allworksbackup');
 
@@ -1036,10 +1036,10 @@ use think\Db;
 				$data['state']=300;
 				return $data;
 			}
-			$classss=model('classss');
-			$allstudent =model('allstudent');
-			$allworks=model('allworks');
-			$totalmark=model('totalmark');
+			$classss=model('classssbackup');
+			$allstudent =model('allstudentbackup');
+			$allworks=model('allworksbackup');
+			$totalmark=model('totalmarkbackup');
 
 			//读取班级信息,由此获取到序号
 			$data=$classss->returnone($classid);
@@ -1065,11 +1065,11 @@ use think\Db;
 			$request = request();
 			$getdata=$request->param();
 			$id=$getdata['id'];
-			$classss=model('classss');
-			$allstudent =model('allstudent');
-			$allworks=model('allworks');
-			$totalmark=model('totalmark');
-			$singlegrade=model('singlegrade');
+			$classss=model('classssbackup');
+			$allstudent =model('allstudentbackup');
+			$allworks=model('allworksbackup');
+			$totalmark=model('totalmarkbackup');
+			$singlegrade=model('singlegradebackup');
 			//通过id获取到学号和班级名称
 			$studata=$allstudent->find($id);
 			$classname=$studata[0]['classname'];
@@ -1109,8 +1109,10 @@ use think\Db;
 				$data['content']=$data['content']."<td>".$sdata[$i]['stunum']."</td>";
 				$data['content']=$data['content']."<td>".$sdata[$i]['stuname']."</td>";
 				$data['content']=$data['content']."<td>".$sdata[$i]['sex']."</td>";
+				$data['content']=$data['content']."<td>".'<button class="btn btn-success btn-sm pull-left" id="del'.$i.'"  value="'.$sdata[$i]['id'].'" >删除此学生</button>'."</td>";
 				$data['content']=$data['content']."</tr>";
 			}
+			$data['content']=$data['content'].'<tr> <button style="display:none" id="sentid3" value="'.$i.'" >删除此学生</button> </tr>';
 			$data['state']=200;
 			return $data;
 		}

@@ -13,7 +13,7 @@ $(document).ready(function(){
 		document.getElementById('tbody').appendChild(scriptObj);
 	}
 	$(function(){
-		for (var i = 0; i < $('#sentid').val(); i++) {
+		for (var i = 0; i < $('#sentid3').val(); i++) {
 			$("#del"+i).click(function(){
 				layer.msg('加载中', {icon: 16,shade:[0.1,'#000'], time:1000000000});
 				$.ajax({

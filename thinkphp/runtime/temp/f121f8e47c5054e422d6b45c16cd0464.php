@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:80:"D:\web\htdocs\kind\thinkphp\public/../application/index\view\backup\lookstu.html";i:1505382709;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:80:"D:\web\htdocs\kind\thinkphp\public/../application/index\view\backup\lookstu.html";i:1520104377;}*/ ?>
 <section class="wrapper">
   <h3>查看学生信息</h3>
   <div class="row mt">
@@ -24,6 +24,7 @@
                         <td></td>
                         <td><button class="btn btn-success btn-sm pull-left" id="delete<?php echo $i; ?>"  value="<?php echo $vo['id']; ?>" >删除</button></td>
                         <td><button class="btn btn-success btn-sm pull-left" id="button<?php echo $i; ?>"  value="<?php echo $vo['id']; ?>" >查看信息</button></td>
+                        <td><button class="btn btn-success btn-sm pull-left" id="add<?php echo $i; ?>"  value="<?php echo $vo['id']; ?>" >增加学生</button></td>
                       </tr>
                     <?php endforeach; endif; else: echo "" ;endif; ?>
                     <button id="sentid" value="<?php echo $i; ?>" style="display: none;"></button>
