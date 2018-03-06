@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\web\htdocs\kind\thinkphp\public/../application/index\view\backup\index.html";i:1520112398;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\web\htdocs\kind\thinkphp\public/../application/index\view\backup\index.html";i:1520260023;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -81,7 +81,7 @@
                       </a>
                   </li> -->
 
-                  <li class="sub-menu">
+                  <!-- <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-desktop"></i>
                           <span>通知管理</span>
@@ -102,7 +102,7 @@
                           <li id="ajax4" ajax="addcu"><p>新增课程</p></li>
                           <li id="ajax5" ajax="showkecheng"><p>查看当前使用课程</p></li>
                       </ul>
-                  </li>
+                  </li> -->
                   <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class="fa fa-book"></i>
