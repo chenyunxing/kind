@@ -331,7 +331,7 @@ use think\Db;
 			$charactors = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
 			$z=0;
 			$allstudent=model('allstudentbackup');
-			$sdata=$allstudent->select();
+			$sdata=$allstudent->selectall($classdata);
 			for ($i=0; $i <count($grouppeople) ; $i++) { 
 				for ($f=0; $f < $grouppeople[$i]; $f++) { 
 					$allstudent->changegroup($sdata[$z]['stunum'],$charactors[$i]);
@@ -1112,7 +1112,7 @@ use think\Db;
 				$data['content']=$data['content']."<td>".'<button class="btn btn-success btn-sm pull-left" id="del'.$i.'"  value="'.$sdata[$i]['id'].'" >删除此学生</button>'."</td>";
 				$data['content']=$data['content']."</tr>";
 			}
-			$data['content']=$data['content'].'<tr> <button style="display:none" id="sentid3" value="'.$i.'" >删除此学生</button> </tr>';
+			$data['content']=$data['content'].'<tr style="display:none"><td><button id="sentid3" value="'.$i.'">num</button></td></tr>';
 			$data['state']=200;
 			return $data;
 		}
@@ -1919,7 +1919,7 @@ use think\Db;
 			$request = request();
 			$postdata=$request->param();
 			if ($postdata['data']=='sure') {
-				if ($this->backups()) {
+				if ($this->backups($postdata['name'])) {
 					if ($this->clear()) {
 						$data['state']=200;
 						return $data;
@@ -1930,17 +1930,46 @@ use think\Db;
 			return $data;
 		}
 		//备份数据库接口
-		function backups(){
-			$database=Config::get('database');
+		function backups($name){
+			// $database=Config::get('database');
 			header("Content-type:text/html;charset=utf-8");
 			//配置信息
-			$cfg_dbhost = $database['hostname'];
-			$cfg_dbname = $database['database'];
-			$cfg_dbuser = $database['username'];
-			$cfg_dbpwd = $database['password'];
+			$connection = [
+				// 数据库类型
+				'type'            => 'mysql',
+				// 服务器地址
+				'hostname'        => '127.0.0.1',
+				// 数据库名
+				'database'        => 'kindbackup',
+				// 用户名
+				'username'        => 'root',
+				// 密码
+				'password'        => 'root',
+				// 端口
+				'hostport'        => '3306',
+				// 连接dsn
+				'dsn'             => '',
+				// 数据库连接参数
+				'params'          => [],
+				// 数据库编码默认采用utf8
+				'charset'         => 'utf8',
+				// 数据库表前缀
+				'prefix'          => '',
+			];
+			// $cfg_dbhost = $database['hostname'];
+			// $cfg_dbname = $database['database'];
+			// $cfg_dbuser = $database['username'];
+			// $cfg_dbpwd = $database['password'];
+			$cfg_dbhost = $connection['hostname'];
+			$cfg_dbname = $connection['database'];
+			$cfg_dbuser = $connection['username'];
+			$cfg_dbpwd = $connection['password'];
 			$cfg_db_language = 'utf8';
 			$showtime=date("Y-m-d H;i;s");
-			$to_file_name = ROOT_PATH."public/uploads/back/".$showtime.'.sql';
+			if(strpos($name,':') !==false||strpos($name,'/') !==false||strpos($name,'\\') !==false||strpos($name,'*') !==false||strpos($name,'?') !==false||strpos($name,'"') !==false||strpos($name,'<') !==false||strpos($name,'>') !==false||strpos($name,'|') !==false){
+				return ;
+			}
+			$to_file_name = ROOT_PATH."public/uploads/back/".$showtime.$name.'.sql';
 			// END 配置
 			//链接数据库
 			$mysqli = new \mysqli($cfg_dbhost, $cfg_dbuser,$cfg_dbpwd,$cfg_dbname);
@@ -1961,16 +1990,16 @@ use think\Db;
 			file_put_contents($to_file_name,$info,FILE_APPEND);
 			//将每个表的表结构导出到文件
 			foreach($tabList as $val){
-				if ($val=='admin'||$val=='curriculum'||$val=='notice'||$val=='totalmarkbackup'||$val=='singlegradebackup'||$val=='classssbackup'||$val=='allworksbackup'||$val=='allstudentbackup') {
+				if ($val=='admin'||$val=='curriculum'||$val=='notice') {
 					continue;
 				}
-				$sql = "show create table ".$val.'backup';
+				$sql = "show create table ".$val;
 				$res = mysqli_query($mysqli,$sql);
 				$row = mysqli_fetch_array($res);
 				$info = "-- ----------------------------\r\n";
-				$info .= "-- Table structure for `".$val.'backup'."`\r\n";
+				$info .= "-- Table structure for `".$val."`\r\n";
 				$info .= "-- ----------------------------\r\n";
-				$info .= "DROP TABLE IF EXISTS `".$val.'backup'."`;\r\n";
+				$info .= "DROP TABLE IF EXISTS `".$val."`;\r\n";
 				$sqlStr = $info.$row[1].";\r\n\r\n";
 				//追加到文件
 				file_put_contents($to_file_name,$sqlStr,FILE_APPEND);
@@ -1979,7 +2008,7 @@ use think\Db;
 			}
 			//将每个表的数据导出到文件
 			foreach($tabList as $val){
-				if ($val=='admin'||$val=='curriculum'||$val=='notice'||$val=='totalmarkbackup'||$val=='singlegradebackup'||$val=='classssbackup'||$val=='allworksbackup'||$val=='allstudentbackup') {
+				if ($val=='admin'||$val=='curriculum'||$val=='notice') {
 					continue;
 				}
 				$sql = "select * from ".$val;
@@ -1988,12 +2017,12 @@ use think\Db;
 				if(mysqli_num_rows($res)<1) continue;
 				//
 				$info = "-- ----------------------------\r\n";
-				$info .= "-- Records for `".$val.'backup'."`\r\n";
+				$info .= "-- Records for `".$val."`\r\n";
 				$info .= "-- ----------------------------\r\n";
 				file_put_contents($to_file_name,$info,FILE_APPEND);
 				//读取数据
 				while($row = mysqli_fetch_row($res)){
-					$sqlStr = "INSERT INTO `".$val.'backup'."` VALUES (";
+					$sqlStr = "INSERT INTO `".$val."` VALUES (";
 				foreach($row as $zd){
 					$sqlStr .= "'".$zd."', ";
 				}
@@ -2010,18 +2039,44 @@ use think\Db;
 		}
 		//清除数据库接口
 		function clear(){
-			$database=Config::get('database');
-			$cfg_dbhost = $database['hostname'];
-			$cfg_dbname = $database['database'];
-			$cfg_dbuser = $database['username'];
-			$cfg_dbpwd = $database['password'];
+			// $database=Config::get('database');
+			$connection = [
+				// 数据库类型
+				'type'            => 'mysql',
+				// 服务器地址
+				'hostname'        => '127.0.0.1',
+				// 数据库名
+				'database'        => 'kindbackup',
+				// 用户名
+				'username'        => 'root',
+				// 密码
+				'password'        => 'root',
+				// 端口
+				'hostport'        => '3306',
+				// 连接dsn
+				'dsn'             => '',
+				// 数据库连接参数
+				'params'          => [],
+				// 数据库编码默认采用utf8
+				'charset'         => 'utf8',
+				// 数据库表前缀
+				'prefix'          => '',
+			];
+			// $cfg_dbhost = $database['hostname'];
+			// $cfg_dbname = $database['database'];
+			// $cfg_dbuser = $database['username'];
+			// $cfg_dbpwd = $database['password'];
+			$cfg_dbhost = $connection['hostname'];
+			$cfg_dbname = $connection['database'];
+			$cfg_dbuser = $connection['username'];
+			$cfg_dbpwd = $connection['password'];
 			$mysqli = new \mysqli($cfg_dbhost, $cfg_dbuser,$cfg_dbpwd,$cfg_dbname);
 			mysqli_query($mysqli,"SET NAMES 'UTF8'");
-			$sql1= "TRUNCATE TABLE allstudent;";
-			$sql2= "TRUNCATE TABLE allworks;";
-			$sql3= "TRUNCATE TABLE classss;";
-			$sql4= "TRUNCATE TABLE singlegrade;";
-			$sql5= "TRUNCATE TABLE totalmark;";
+			$sql1= "TRUNCATE TABLE allstudentbackup;";
+			$sql2= "TRUNCATE TABLE allworksbackup;";
+			$sql3= "TRUNCATE TABLE classssbackup;";
+			$sql4= "TRUNCATE TABLE singlegradebackup;";
+			$sql5= "TRUNCATE TABLE totalmarkbackup;";
 			//拼接的方法不好使 只能一个个来
 			$flag=5;
 			if(mysqli_query($mysqli,$sql1)){$flag--;}

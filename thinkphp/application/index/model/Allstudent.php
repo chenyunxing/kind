@@ -59,6 +59,17 @@ class Allstudent extends Model
 		$data['id']=$id;
 		return $this->where($data)->select();
 	}
+	public function selectall($classdata){
+		$sdata = array();
+		for ($i=0; $i < count($classdata); $i++) { 
+			$sdata1 = array();
+			$sdata1 = $this->returnone($classdata[$i]['classname']);
+			for ($f=0; $f < count($sdata1); $f++) { 
+				$sdata[count($sdata)] = $sdata1[$f];
+			}
+		}
+		return $sdata;
+	}
 }
 
  ?>

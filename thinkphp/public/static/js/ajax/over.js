@@ -1,13 +1,12 @@
 $(document).ready(function(){
 	$("#buttona").click(function(){
-		layer.confirm("请确定是否结束课程,是否继续？", {
-			btn: ['确定','取消'] //按钮
-		}, function(){
+		layer.prompt({title: '请输入文件名', formType: 2}, function(text, index){
+			layer.close(index);
 			layer.msg('加载中', {icon: 16,shade:[0.1,'#000'], time:1000000000});
 			$.ajax({
 				url: "upover",
 				type: "POST",
-				data:{data:"sure"},
+				data:{data:"sure",name:text},
 				dataType:"json",
 				success: function (data) {
 					if (data.state==200) {
@@ -17,7 +16,7 @@ $(document).ready(function(){
 						layer.msg('结束课程成功');
 					}else{
 						layer.closeAll();
-						layer.alert('参数错误');
+						layer.alert('文件名可能含有非法字符，请重新命名');
 					}
 				},
 				error: function () {

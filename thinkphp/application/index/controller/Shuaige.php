@@ -125,8 +125,8 @@ use think\Db;
 				return false;
 			}
 			$addclass =model('classss');
-			$classdata=$addclass->returnall();
-			$num=$addclass->count();
+			$classdata=$addclass->returnall();//返回班级表所有字段
+			$num=$addclass->count();//统计所有班级人数和
 			for ($i=0; $i < $num; $i++) { 
 				$group[$i]=intval($groupnum/$num);
 			}
@@ -331,7 +331,7 @@ use think\Db;
 			$charactors = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
 			$z=0;
 			$allstudent=model('allstudent');
-			$sdata=$allstudent->select();
+			$sdata=$allstudent->selectall($classdata);
 			for ($i=0; $i <count($grouppeople) ; $i++) { 
 				for ($f=0; $f < $grouppeople[$i]; $f++) { 
 					$allstudent->changegroup($sdata[$z]['stunum'],$charactors[$i]);
@@ -1918,7 +1918,7 @@ use think\Db;
 			$request = request();
 			$postdata=$request->param();
 			if ($postdata['data']=='sure') {
-				if ($this->backups()) {
+				if ($this->backups($postdata['name'])) {
 					if ($this->clear()) {
 						$data['state']=200;
 						return $data;
@@ -1929,7 +1929,7 @@ use think\Db;
 			return $data;
 		}
 		//备份数据库接口
-		function backups(){
+		function backups($name){
 			$database=Config::get('database');
 			header("Content-type:text/html;charset=utf-8");
 			//配置信息
@@ -1939,7 +1939,11 @@ use think\Db;
 			$cfg_dbpwd = $database['password'];
 			$cfg_db_language = 'utf8';
 			$showtime=date("Y-m-d H;i;s");
-			$to_file_name = ROOT_PATH."public/uploads/back/".$showtime.'.sql';
+			if(strpos($name,':') !==false||strpos($name,'/') !==false||strpos($name,'\\') !==false||strpos($name,'*') !==false||strpos($name,'?') !==false||strpos($name,'"') !==false||strpos($name,'<') !==false||strpos($name,'>') !==false||strpos($name,'|') !==false){
+				return ;
+			}
+			$to_file_name = ROOT_PATH."public/uploads/back/".$showtime.$name.'.sql';
+			// echo $to_file_name;
 			// END 配置
 			//链接数据库
 			$mysqli = new \mysqli($cfg_dbhost, $cfg_dbuser,$cfg_dbpwd,$cfg_dbname);

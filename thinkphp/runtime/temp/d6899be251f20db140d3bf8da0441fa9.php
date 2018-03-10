@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\web\htdocs\kind\thinkphp\public/../application/index\view\backup\index.html";i:1520260023;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"D:\web\htdocs\kind\thinkphp\public/../application/index\view\backup\index.html";i:1520666842;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,7 +38,7 @@
     <script src="__ROOT__/static/js/common.js?q=3"></script>
     <script>var _root='__ROOT__'; var now='index1';//存储当前页面</script>
     <script src="__ROOT__/static/layer/layer.js"></script>
-    <script src="__ROOT__/static/js/ajax/index1.js?a=qw" id='other'></script>
+    <script src="" id='other'></script>
     <script id='temp'></script>
   </head>
   <body>
@@ -138,7 +138,7 @@
                           <li id="ajax14" ajax="summary"><p>成绩统计</p></li>
                       </ul>
                   </li>
-                  <!-- <li class="sub-menu">
+                  <li class="sub-menu">
                       <a href="javascript:;" >
                           <i class=" fa fa-bar-chart-o"></i>
                           <span>结束课程</span>
@@ -147,7 +147,7 @@
                           <li  id="ajax15" ajax="over"><p>结束课程</p></li>
                           <li  id="ajax16" ajax="back"><p>还原历次数据</p></li>
                       </ul>
-                  </li> -->
+                  </li>
 
               </ul>
               <!-- sidebar menu end-->
@@ -157,32 +157,6 @@
       <!--main content start-->
       
       <section id="main-content">
-          <section class="wrapper">
-            <h3>发布新通知</h3>
-            <div class="row mt">
-              <div class="col-lg-12">
-                  <div class="form-panel">
-                      <form class="form-horizontal style-form">
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">通知标题</label>
-                            <div class="col-sm-10">
-                                <input id="title" type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 col-sm-2 control-label">通知内容</label>
-                            <div class="col-sm-10">
-                                <script id="editor" style="height: 220px;" type="text/plain"></script>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                          <input type="button" id="sent" class="btn btn-theme" style="float: right;margin-right: 1.5%;" value="发布" >
-                        </div>
-                      </form>
-                  </div>
-              </div><!-- col-lg-12-->     
-            </div>
-          </section>
       </section>
       <section id="main-content2"></section>
       <!--main content end-->
