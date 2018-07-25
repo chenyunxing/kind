@@ -1,5 +1,5 @@
 <section class="wrapper">
-  <form id= "uploadForm" enctype="multipart/form-data" style="display: none">  
+  <form id= "uploadForm" enctype="multipart/form-data" style="display: none">
     <input type="file" id="file1" name="file"/>
   </form>
   <h3>修改学生分组</h3>
@@ -25,7 +25,7 @@
                       <td>{$vo.allS}</td>
                       <td></td>
                       <td><button id="button{$i}" class="btn btn-success btn-sm pull-left">导入修改后的表</button></td>
-                      <td><a href="{:url('index/shuaige/dataout')}?id={$vo.id}"><button class="btn btn-success btn-sm pull-left">导出</button></a></td>
+                      <td><a href="{:url('index/backup/dataout')}?id={$vo.id}"><button class="btn btn-success btn-sm pull-left">导出</button></a></td>
                     </tr>
                   {/volist}
                 </tbody>
