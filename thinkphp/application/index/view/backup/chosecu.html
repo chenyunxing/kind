@@ -24,11 +24,11 @@
                         <td></td>
                         {eq name="vo['state']" value="0"}
                           <td><button id="button{$i}" value="{$vo.id}" class="btn btn-info">使用</button></td>
-                          <td><a href="{:url('index/shuaige/outkecheng')}?id={$vo.id}" target="_blank"><button class="btn btn-primary">导出</button></a></td>
+                          <td><a href="{:url('index/backup/outkecheng')}?id={$vo.id}" target="_blank"><button class="btn btn-primary">导出</button></a></td>
                           <td><button id="delete{$i}" value="{$vo.id}" class="btn btn-danger">删除</button></td>
                         {else/}
                           <td><button id="button{$i}" value="{$vo.id}" class="btn btn-info" style="background: #555;opacity: 0.5;cursor: default;">已使用</button></td>
-                          <td><a href="{:url('index/shuaige/outkecheng')}?id={$vo.id}" target="_blank"><button class="btn btn-primary">导出</button></a></td>
+                          <td><a href="{:url('index/backup/outkecheng')}?id={$vo.id}" target="_blank"><button class="btn btn-primary">导出</button></a></td>
                          <td><button id="delete{$i}" class="btn btn-danger" value="{$vo.id}" style="background: #555;opacity: 0.5;cursor: default;">删除</button></td>
                         {/eq}
                       </tr>
