@@ -8,6 +8,7 @@ use think\Config;
 use think\Db;
 	class Backup extends Controller
 	{
+		//过滤器
 		protected $beforeActionList = [
 		'first'
 		];
@@ -42,7 +43,7 @@ use think\Db;
 			else
 				$next=0;
 			$data=$notice->getnotice(intval($pageNumber),10);
-			for ($i=0; $i < count($data); $i++) { 
+			for ($i=0; $i < count($data); $i++) {
 				$data[$i]['time']=date("Y-m-d H:i:s",$data[$i]['time']);
 			}
 			$view = new View();
@@ -127,7 +128,7 @@ use think\Db;
 			$addclass =model('classssbackup');
 			$classdata=$addclass->returnall();
 			$num=$addclass->count();
-			for ($i=0; $i < $num; $i++) { 
+			for ($i=0; $i < $num; $i++) {
 				$group[$i]=intval($groupnum/$num);
 			}
 			$f=$groupnum%$num;
@@ -141,10 +142,10 @@ use think\Db;
 			}
 			//定义每一组人数存储的数组
 			$grouppeople=array();
-			for ($i=0; $i < $groupnum; $i++) { 
+			for ($i=0; $i < $groupnum; $i++) {
 				$grouppeople[$i]=0;
 			}
-			for ($i=0; $i < $num; $i=$i+2) { 
+			for ($i=0; $i < $num; $i=$i+2) {
 				if($i==$num-1){
 					$class1=$classdata[$i];
 					$z=0;
@@ -152,7 +153,7 @@ use think\Db;
 						$z++;
 					}
 					$nowgroup=$z;
-					for ($z=$nowgroup; $z < $nowgroup+$group[$i]; $z++) { 
+					for ($z=$nowgroup; $z < $nowgroup+$group[$i]; $z++) {
 						$grouppeople[$z]=intval($class1['allS']/$group[$i]);
 					}
 					$f=$class1['allS']%$group[$i];
@@ -178,7 +179,7 @@ use think\Db;
 				}
 				//将前两个班的组内人数进行处理
 				$nowgroup=$z;
-				for ($z=$nowgroup; $z < $nowgroup+$temp; $z++) { 
+				for ($z=$nowgroup; $z < $nowgroup+$temp; $z++) {
 					$grouppeople[$z]=intval($classstunum/$temp);
 				}
 				$f=$classstunum%$temp;
@@ -195,13 +196,13 @@ use think\Db;
 				if($temp%2!=0){
 					$change=0;
 					$remainder=$class1['allS'];
-					for ($z=$nowgroup; $z < intval($temp/2)+$nowgroup; $z++) { 
+					for ($z=$nowgroup; $z < intval($temp/2)+$nowgroup; $z++) {
 						$remainder=$remainder-$grouppeople[$z];
 					}
 					//当余数的绝对值小于等于组数一半时进行强塞
 					if($remainder>=0&&$remainder<intval($temp/2)){
 						$tempremainder=$remainder;
-						for ($z=$nowgroup; ; $z++) { 
+						for ($z=$nowgroup; ; $z++) {
 							if ($tempremainder==0) {
 								break;
 							}
@@ -209,7 +210,7 @@ use think\Db;
 							$grouppeople[$z]++;
 						}
 						$tempremainder=$remainder;
-						for ($z=intval($temp/2)+$nowgroup; ; $z++) { 
+						for ($z=intval($temp/2)+$nowgroup; ; $z++) {
 							if ($tempremainder==0) {
 								break;
 							}
@@ -220,7 +221,7 @@ use think\Db;
 					}
 					if ($remainder<=0&&$remainder>-1*intval($temp/2)){
 						$tempremainder=$remainder*-1;
-						for ($z=$nowgroup; ; $z++) { 
+						for ($z=$nowgroup; ; $z++) {
 							if ($tempremainder==0) {
 								break;
 							}
@@ -228,7 +229,7 @@ use think\Db;
 							$grouppeople[$z]--;
 						}
 						$tempremainder=$remainder*-1;
-						for ($z=intval($temp/2)+$nowgroup; ; $z++){ 
+						for ($z=intval($temp/2)+$nowgroup; ; $z++){
 							if ($tempremainder==0) {
 								break;
 							}
@@ -239,13 +240,13 @@ use think\Db;
 					}
 					if($change!=1){
 						$remainder=$class1['allS'];
-						for ($z=0; $z < intval($temp/2)+1; $z++) { 
+						for ($z=0; $z < intval($temp/2)+1; $z++) {
 							$remainder=$remainder-$grouppeople[$z];
 						}
 						//当余数的绝对值小于等于组数一半时进行强塞
 						if($remainder>=0&&$remainder<intval($temp/2)){
 							$tempremainder=$remainder;
-							for ($z=$nowgroup; ; $z++) { 
+							for ($z=$nowgroup; ; $z++) {
 								if ($tempremainder==0) {
 									break;
 								}
@@ -253,7 +254,7 @@ use think\Db;
 								$grouppeople[$z]++;
 							}
 							$tempremainder=$remainder;
-							for ($z=intval($temp/2)+$nowgroup+1; ; $z++) { 
+							for ($z=intval($temp/2)+$nowgroup+1; ; $z++) {
 								if ($tempremainder==0) {
 									break;
 								}
@@ -264,7 +265,7 @@ use think\Db;
 						}
 						if ($remainder<=0&&$remainder>-1*intval($temp/2)){
 							$tempremainder=$remainder*-1;
-							for ($z=$nowgroup; ; $z++) { 
+							for ($z=$nowgroup; ; $z++) {
 								if ($tempremainder==0) {
 									break;
 								}
@@ -272,7 +273,7 @@ use think\Db;
 								$grouppeople[$z]--;
 							}
 							$tempremainder=$remainder*-1;
-							for ($z=intval($temp/2)+$nowgroup+1; ; $z++){ 
+							for ($z=intval($temp/2)+$nowgroup+1; ; $z++){
 								if ($tempremainder==0) {
 									break;
 								}
@@ -284,13 +285,13 @@ use think\Db;
 					}
 				}else{
 					$remainder=$class1['allS'];
-					for ($z=$nowgroup; $z < intval($temp/2)+$nowgroup; $z++) { 
+					for ($z=$nowgroup; $z < intval($temp/2)+$nowgroup; $z++) {
 						$remainder=$remainder-$grouppeople[$z];
 					}
 					//当余数的绝对值小于等于组数一半时进行强塞
 					if($remainder>=0&&$remainder<intval($temp/2)){
 						$tempremainder=$remainder;
-						for ($z=$nowgroup; ; $z++) { 
+						for ($z=$nowgroup; ; $z++) {
 							if ($tempremainder==0) {
 								break;
 							}
@@ -298,7 +299,7 @@ use think\Db;
 							$grouppeople[$z]++;
 						}
 						$tempremainder=$remainder;
-						for ($z=intval($temp/2)+$nowgroup; ; $z++) { 
+						for ($z=intval($temp/2)+$nowgroup; ; $z++) {
 							if ($tempremainder==0) {
 								break;
 							}
@@ -309,7 +310,7 @@ use think\Db;
 					}
 					if ($remainder<=0&&$remainder>-1*intval($temp/2)){
 						$tempremainder=$remainder*-1;
-						for ($z=$nowgroup; ; $z++) { 
+						for ($z=$nowgroup; ; $z++) {
 							if ($tempremainder==0) {
 								break;
 							}
@@ -317,7 +318,7 @@ use think\Db;
 							$grouppeople[$z]--;
 						}
 						$tempremainder=$remainder*-1;
-						for ($z=intval($temp/2)+$nowgroup; ; $z++){ 
+						for ($z=intval($temp/2)+$nowgroup; ; $z++){
 							if ($tempremainder==0) {
 								break;
 							}
@@ -332,8 +333,8 @@ use think\Db;
 			$z=0;
 			$allstudent=model('allstudentbackup');
 			$sdata=$allstudent->selectall($classdata);
-			for ($i=0; $i <count($grouppeople) ; $i++) { 
-				for ($f=0; $f < $grouppeople[$i]; $f++) { 
+			for ($i=0; $i <count($grouppeople) ; $i++) {
+				for ($f=0; $f < $grouppeople[$i]; $f++) {
 					$allstudent->changegroup($sdata[$z]['stunum'],$charactors[$i]);
 					$z++;
 				}
@@ -402,7 +403,7 @@ use think\Db;
 			$objPHPExcel->setActiveSheetIndex(0)->setCellValue('A1',$cdata[0]['classname']."实习分组表");
 			//设置第二行序列
 			$charactors = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
-			for ($i=0; $i < 2; $i++) { 
+			for ($i=0; $i < 2; $i++) {
 				$objPHPExcel->setActiveSheetIndex(0)->setCellValue($charactors[0+($i*8)].'2', '组号')
 				->setCellValue($charactors[1+($i*8)].'2', '序号')
 				->setCellValue($charactors[2+($i*8)].'2', '学号')
@@ -463,10 +464,10 @@ use think\Db;
 			$objPHPExcel->getActiveSheet()->getStyle('A35')->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
 			$objPHPExcel->setActiveSheetIndex(0)->setCellValue('A35','（注：实操满分85，作业满分15，平时成绩为实操加作业之和）');
 			//制作内容栏
-			$styleArray = array(  
-						'borders' => array(  
-							'allborders' => array(  
-								'style' => \PHPExcel_Style_Border::BORDER_THIN, 
+			$styleArray = array(
+						'borders' => array(
+							'allborders' => array(
+								'style' => \PHPExcel_Style_Border::BORDER_THIN,
 								// 'color' => array('argb' => 'FFFF0000'),
 
 							),
@@ -475,17 +476,17 @@ use think\Db;
 					$objPHPExcel->getActiveSheet()->getStyle("A2:P34")->applyFromArray($styleArray);
 			//$i代表数据位于哪条,$f代表属于第一还是第二列,$z代表当前指针位于哪一行
 			$temp=$sdata[0]['stugroup'];
-			for ($i=0,$f=0,$z=3; $i < count($sdata); $i++,$z++) { 
+			for ($i=0,$f=0,$z=3; $i < count($sdata); $i++,$z++) {
 				if($z==35){
 					$f++;
 					$z=3;
 				}
 				if($temp!=$sdata[$i]['stugroup']){
 					// $objPHPExcel->getActiveSheet()->getStyle($charactors[1+($f*9)].$z.":".$charactors[8+($f*9)].$z)->getBorders()->getTop()->setBorderStyle(\PHPExcel_Style_Border::BORDER_THICK);
-					$styleArray = array(  
-						'borders' => array(  
-							'top' => array(  
-								'style' => \PHPExcel_Style_Border::BORDER_THICK,//边框是粗的  
+					$styleArray = array(
+						'borders' => array(
+							'top' => array(
+								'style' => \PHPExcel_Style_Border::BORDER_THICK,//边框是粗的
 								// 'color' => array('argb' => 'FFFF0000'),
 
 							),
@@ -505,10 +506,10 @@ use think\Db;
 				->setCellValue($charactors[6+($f*8)].$z, '');
 				$objPHPExcel->setActiveSheetIndex(0)->setCellValue($charactors[7+($f*8)].$z, '');
 			}
-			$styleArray = array(  
-						'borders' => array(  
-							'top' => array(  
-								'style' => \PHPExcel_Style_Border::BORDER_THICK,//边框是粗的  
+			$styleArray = array(
+						'borders' => array(
+							'top' => array(
+								'style' => \PHPExcel_Style_Border::BORDER_THICK,//边框是粗的
 								// 'color' => array('argb' => 'FFFF0000'),
 
 							),
@@ -575,7 +576,7 @@ use think\Db;
 			$objPHPExcel->setActiveSheetIndex(0)->setCellValue('A1',$cdata[0]['classname']."实习分组表");
 			//设置第二行序列
 			$charactors = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
-			for ($i=0; $i < 2; $i++) { 
+			for ($i=0; $i < 2; $i++) {
 				$objPHPExcel->setActiveSheetIndex(0)->setCellValue($charactors[0+($i*8)].'2', '组号')
 				->setCellValue($charactors[1+($i*8)].'2', '序号')
 				->setCellValue($charactors[2+($i*8)].'2', '学号')
@@ -636,10 +637,10 @@ use think\Db;
 			$objPHPExcel->getActiveSheet()->getStyle('A35')->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
 			$objPHPExcel->setActiveSheetIndex(0)->setCellValue('A35','（注：实操满分85，作业满分15，平时成绩为实操加作业之和）');
 			//制作内容栏
-			$styleArray = array(  
-						'borders' => array(  
-							'allborders' => array(  
-								'style' => \PHPExcel_Style_Border::BORDER_THIN, 
+			$styleArray = array(
+						'borders' => array(
+							'allborders' => array(
+								'style' => \PHPExcel_Style_Border::BORDER_THIN,
 								// 'color' => array('argb' => 'FFFF0000'),
 
 							),
@@ -651,7 +652,7 @@ use think\Db;
 			$temp2=3;
 			$objPHPExcel->setActiveSheetIndex(0)->setCellValue("A3",$sdata[0]['stugroup']);
 			// $objPHPExcel->getActiveSheet()->mergeCells('A1:R1');
-			for ($i=0,$f=0,$z=3; $i < count($sdata); $i++,$z++) { 
+			for ($i=0,$f=0,$z=3; $i < count($sdata); $i++,$z++) {
 				if($z==35){
 					$f++;
 					$z=3;
@@ -662,10 +663,10 @@ use think\Db;
 				//下一组
 				if($temp!=$sdata[$i]['stugroup']){
 					// $objPHPExcel->getActiveSheet()->getStyle($charactors[1+($f*9)].$z.":".$charactors[8+($f*9)].$z)->getBorders()->getTop()->setBorderStyle(\PHPExcel_Style_Border::BORDER_THICK);
-					$styleArray = array(  
-						'borders' => array(  
-							'top' => array(  
-								'style' => \PHPExcel_Style_Border::BORDER_THICK,//边框是粗的  
+					$styleArray = array(
+						'borders' => array(
+							'top' => array(
+								'style' => \PHPExcel_Style_Border::BORDER_THICK,//边框是粗的
 								// 'color' => array('argb' => 'FFFF0000'),
 							),
 						),
@@ -687,9 +688,9 @@ use think\Db;
 							$objPHPExcel->setActiveSheetIndex(0)->setCellValue($charactors[0+($f*8)].$z,$sdata[$i]['stugroup']);
 							$temp2=$z;
 						}
-						
+
 					}
-					
+
 					// echo $charactors[1+($f*9)].$z.":".$charactors[8+($f*9)].$z;
 					// die();
 				}
@@ -702,10 +703,10 @@ use think\Db;
 				->setCellValue($charactors[6+($f*8)].$z, '');
 				$objPHPExcel->setActiveSheetIndex(0)->setCellValue($charactors[7+($f*8)].$z, '');
 			}
-			$styleArray = array(  
-						'borders' => array(  
-							'top' => array(  
-								'style' => \PHPExcel_Style_Border::BORDER_THICK,//边框是粗的  
+			$styleArray = array(
+						'borders' => array(
+							'top' => array(
+								'style' => \PHPExcel_Style_Border::BORDER_THICK,//边框是粗的
 								// 'color' => array('argb' => 'FFFF0000'),
 
 							),
@@ -760,20 +761,20 @@ use think\Db;
 					// 获取工作表
 					$objWorksheet = $objPHPexcel->getActiveSheet();
 					// 取得总行数
-					$highestRow = $objWorksheet->getHighestRow(); 
+					$highestRow = $objWorksheet->getHighestRow();
 					// 取得总列数
-					$highestColumn = $objWorksheet->getHighestColumn(); 
-					$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn); 
+					$highestColumn = $objWorksheet->getHighestColumn();
+					$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn);
 					// 创建数组存储数据
-					$excelData = array(); 
+					$excelData = array();
 					// 写入数据到数组中
-					for ($row = 1; $row <= $highestRow; $row++) { 
-						for ($col = 0; $col < $highestColumnIndex; $col++) { 
+					for ($row = 1; $row <= $highestRow; $row++) {
+						for ($col = 0; $col < $highestColumnIndex; $col++) {
 							$excelData[$row][] =(string)$objWorksheet->getCellByColumnAndRow($col, $row)->getValue();
-						} 
+						}
 					}
 					$allstudent =model('allstudentbackup');
-					for ($i=1; $i <=2 ; $i++) { 
+					for ($i=1; $i <=2 ; $i++) {
 						for ($f=3; $f <35 ; $f++) {
 							if($i==1){
 								$stugroup=$excelData[$f][0];
@@ -792,12 +793,12 @@ use think\Db;
 									$data['stugroup']=$stugroup;
 									$allstudent->changegroup($stunum,$stugroup);
 								}
-								
+
 							}
 						}
 					}
 					$data1['state']="修改成功";
-					
+
 				}else{
 					$data1['state']="上传错误";
 					// echo $file->getError();
@@ -882,38 +883,38 @@ use think\Db;
 			// 获取工作表
 			$objWorksheet=$objPHPexcel->getActiveSheet();
 			// 取得总行数
-			$highestRow = $objWorksheet->getHighestRow(); 
+			$highestRow = $objWorksheet->getHighestRow();
 			// 取得总列数
-			$highestColumn = $objWorksheet->getHighestColumn(); 
-			$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn); 
+			$highestColumn = $objWorksheet->getHighestColumn();
+			$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn);
 			// 创建数组存储数据
-			$excelData = array(); 
+			$excelData = array();
 			// 写入数据到数组中
-			for ($row = 1; $row <= $highestRow; $row++) { 
-				for ($col = 0; $col < $highestColumnIndex; $col++) { 
+			for ($row = 1; $row <= $highestRow; $row++) {
+				for ($col = 0; $col < $highestColumnIndex; $col++) {
 					$excelData[$row][] =(string)$objWorksheet->getCellByColumnAndRow($col, $row)->getValue();
-				} 
+				}
 			}
 			$sheetData = $objPHPexcel->getActiveSheet()->toArray(null,true,true,true);
 			$sheetData=array_values($sheetData);
-			for ($i=0; $i < count($sheetData) ; $i++) { 
+			for ($i=0; $i < count($sheetData) ; $i++) {
 				$sheetData[$i]=array_values($sheetData[$i]);
 			}
 			$arr=$objWorksheet->getMergeCells();
 			// dump($arr);
 			$arr=array_values($arr);
 			// 取得总行数
-			$highestRow = $objWorksheet->getHighestRow(); 
+			$highestRow = $objWorksheet->getHighestRow();
 			// 取得总列数
-			$highestColumn = $objWorksheet->getHighestColumn(); 
+			$highestColumn = $objWorksheet->getHighestColumn();
 			$data=array();
-			for ($i=0; $i <$highestRow ; $i++) { 
+			for ($i=0; $i <$highestRow ; $i++) {
 				$data[$i]=array();
 				for ($f=0; $f <$highestColumnIndex ; $f++) {
 					$data[$i][$f]="1:1";
 				}
 			}
-			for ($i=0; $i < count($arr); $i++) { 
+			for ($i=0; $i < count($arr); $i++) {
 				$temp=explode(':',$arr[$i],2);
 				$hang=$this->calculate(substr($temp[0], 0, 1),substr($temp[1], 0, 1));
 				$lie=substr($temp[1], 1, 100)-substr($temp[0], 1, 100);
@@ -924,13 +925,13 @@ use think\Db;
 					}
 				}
 				if($hang>0&&$lie==0){
-					for ($f=$this->charactorsnum(substr($temp[0],0, 1)); $f < $this->charactorsnum(substr($temp[0], 0, 1))+$hang; $f++) { 
+					for ($f=$this->charactorsnum(substr($temp[0],0, 1)); $f < $this->charactorsnum(substr($temp[0], 0, 1))+$hang; $f++) {
 						$data[substr($temp[0], 1, 100)-1][$f]="0:0";
 					}
 				}
 				if($hang>0&&$lie>0){
-					for ($z=substr($temp[0], 1, 100)-1; $z < substr($temp[0], 1, 100)+$lie; $z++) { 
-						for ($f=$this->charactorsnum(substr($temp[0],0, 1))-1; $f < $this->charactorsnum(substr($temp[0], 0, 1))+$hang; $f++) { 
+					for ($z=substr($temp[0], 1, 100)-1; $z < substr($temp[0], 1, 100)+$lie; $z++) {
+						for ($f=$this->charactorsnum(substr($temp[0],0, 1))-1; $f < $this->charactorsnum(substr($temp[0], 0, 1))+$hang; $f++) {
 							$data[$z][$f]="0:0";
 						}
 					}
@@ -940,7 +941,7 @@ use think\Db;
 			$hang = $highestRow;
 			$line = $highestColumnIndex;
 			$redata['content']='';
-			for ($i=0; $i <$hang ; $i++) { 
+			for ($i=0; $i <$hang ; $i++) {
 				$redata['content']=$redata['content'].'<tr>';
 				for ($f=0; $f <$line ; $f++) {
 					$temp=explode(':',$data[$i][$f],2);
@@ -972,22 +973,22 @@ use think\Db;
 				// 获取工作表
 				$objWorksheet = $objPHPexcel->getActiveSheet();
 				// 取得总行数
-				$highestRow = $objWorksheet->getHighestRow(); 
+				$highestRow = $objWorksheet->getHighestRow();
 				// 取得总列数
-				$highestColumn = $objWorksheet->getHighestColumn(); 
-				$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn); 
+				$highestColumn = $objWorksheet->getHighestColumn();
+				$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn);
 				// 创建数组存储数据
-				$excelData = array(); 
+				$excelData = array();
 				// 写入数据到数组中
-				for ($row = 1; $row <= $highestRow; $row++) { 
-					for ($col = 0; $col < $highestColumnIndex; $col++) { 
+				for ($row = 1; $row <= $highestRow; $row++) {
+					for ($col = 0; $col < $highestColumnIndex; $col++) {
 						$excelData[$row][] =(string)$objWorksheet->getCellByColumnAndRow($col, $row)->getValue();
-					} 
+					}
 				}
-				// $classname=substr($excelData[1][0],0,strlen($excelData[1][0])-9);; 
+				// $classname=substr($excelData[1][0],0,strlen($excelData[1][0])-9);;
 				// $classname="ada";
 				$allstudent =model('allstudentbackup');
-			   
+
 				$addclass =model('classssbackup');
 
 				$allworks=model('allworksbackup');
@@ -995,7 +996,7 @@ use think\Db;
 				$totalmark=model('totalmarkbackup');
 			   // echo $allstudent->count();
 			   //  echo $addclass->count();
-				for ($i=4,$z=1; $i <= $highestRow; $i++,$z++) { 
+				for ($i=4,$z=1; $i <= $highestRow; $i++,$z++) {
 					$Xstu=$z;
 					$stunum=$excelData[$i][0];
 					$stuname=$excelData[$i][1];
@@ -1046,7 +1047,7 @@ use think\Db;
 			$classname=$data[0]['classname'];
 			$allstu=$allstudent->returnone($classname);
 			$maxstu=0;
-			for ($i=count($allstu)-1; $i >=0 ; $i--) { 
+			for ($i=count($allstu)-1; $i >=0 ; $i--) {
 				if ($maxstu<$allstu[$i]['Xstu']) {
 					$maxstu=$allstu[$i]['Xstu'];
 				}
@@ -1101,7 +1102,7 @@ use think\Db;
 			$allstudent=model('allstudentbackup');
 			$sdata=$allstudent->returnone($cdata[0]['classname']);
 			$data['content']='';
-			for ($i=0; $i < count($sdata); $i++) { 
+			for ($i=0; $i < count($sdata); $i++) {
 				$data['content']=$data['content']."<tr>";
 				$data['content']=$data['content']."<td>".$sdata[$i]['stugroup']."</td>";
 				$data['content']=$data['content']."<td>".$sdata[$i]['classname']."</td>";
@@ -1137,7 +1138,7 @@ use think\Db;
 			$totalmark=model('totalmarkbackup');
 			$singlegrade=model('singlegradebackup');
 			$allworks=model('allworksbackup');
-			for ($i=0; $i < count($sdata); $i++) { 
+			for ($i=0; $i < count($sdata); $i++) {
 				$totalmark->deleteone($sdata[$i]['stunum']);
 				$allworks->deleteone($sdata[$i]['stunum']);
 				$singlegrade->deleteone($sdata[$i]['stunum']);
@@ -1176,38 +1177,38 @@ use think\Db;
 			// 获取工作表
 			$objWorksheet=$objPHPexcel->getActiveSheet();
 			// 取得总行数
-			$highestRow = $objWorksheet->getHighestRow(); 
+			$highestRow = $objWorksheet->getHighestRow();
 			// 取得总列数
-			$highestColumn = $objWorksheet->getHighestColumn(); 
-			$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn); 
+			$highestColumn = $objWorksheet->getHighestColumn();
+			$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn);
 			// 创建数组存储数据
-			$excelData = array(); 
+			$excelData = array();
 			// 写入数据到数组中
-			for ($row = 1; $row <= $highestRow; $row++) { 
-				for ($col = 0; $col < $highestColumnIndex; $col++) { 
+			for ($row = 1; $row <= $highestRow; $row++) {
+				for ($col = 0; $col < $highestColumnIndex; $col++) {
 					$excelData[$row][] =(string)$objWorksheet->getCellByColumnAndRow($col, $row)->getValue();
-				} 
+				}
 			}
 			$sheetData = $objPHPexcel->getActiveSheet()->toArray(null,true,true,true);
 			$sheetData=array_values($sheetData);
-			for ($i=0; $i < count($sheetData) ; $i++) { 
+			for ($i=0; $i < count($sheetData) ; $i++) {
 				$sheetData[$i]=array_values($sheetData[$i]);
 			}
 			$arr=$objWorksheet->getMergeCells();
 			// dump($arr);
 			$arr=array_values($arr);
 			// 取得总行数
-			$highestRow = $objWorksheet->getHighestRow(); 
+			$highestRow = $objWorksheet->getHighestRow();
 			// 取得总列数
-			$highestColumn = $objWorksheet->getHighestColumn(); 
+			$highestColumn = $objWorksheet->getHighestColumn();
 			$data=array();
-			for ($i=0; $i <$highestRow ; $i++) { 
+			for ($i=0; $i <$highestRow ; $i++) {
 				$data[$i]=array();
 				for ($f=0; $f <$highestColumnIndex ; $f++) {
 					$data[$i][$f]="1:1";
 				}
 			}
-			for ($i=0; $i < count($arr); $i++) { 
+			for ($i=0; $i < count($arr); $i++) {
 				$temp=explode(':',$arr[$i],2);
 				$hang=$this->calculate(substr($temp[0], 0, 1),substr($temp[1], 0, 1));
 				$lie=substr($temp[1], 1, 100)-substr($temp[0], 1, 100);
@@ -1218,13 +1219,13 @@ use think\Db;
 					}
 				}
 				if($hang>0&&$lie==0){
-					for ($f=$this->charactorsnum(substr($temp[0],0, 1)); $f < $this->charactorsnum(substr($temp[0], 0, 1))+$hang; $f++) { 
+					for ($f=$this->charactorsnum(substr($temp[0],0, 1)); $f < $this->charactorsnum(substr($temp[0], 0, 1))+$hang; $f++) {
 						$data[substr($temp[0], 1, 100)-1][$f]="0:0";
 					}
 				}
 				if($hang>0&&$lie>0){
-					for ($z=substr($temp[0], 1, 100)-1; $z < substr($temp[0], 1, 100)+$lie; $z++) { 
-						for ($f=$this->charactorsnum(substr($temp[0],0, 1))-1; $f < $this->charactorsnum(substr($temp[0], 0, 1))+$hang; $f++) { 
+					for ($z=substr($temp[0], 1, 100)-1; $z < substr($temp[0], 1, 100)+$lie; $z++) {
+						for ($f=$this->charactorsnum(substr($temp[0],0, 1))-1; $f < $this->charactorsnum(substr($temp[0], 0, 1))+$hang; $f++) {
 							$data[$z][$f]="0:0";
 						}
 					}
@@ -1234,7 +1235,7 @@ use think\Db;
 			$hang = $highestRow;
 			$line = $highestColumnIndex;
 			$redata['content']='';
-			for ($i=0; $i <$hang ; $i++) { 
+			for ($i=0; $i <$hang ; $i++) {
 				$redata['content']=$redata['content'].'<tr>';
 				for ($f=0; $f <$line ; $f++) {
 					$temp=explode(':',$data[$i][$f],2);
@@ -1265,17 +1266,17 @@ use think\Db;
 			// 获取工作表
 			$objWorksheet = $objPHPexcel->getActiveSheet();
 			// 取得总行数
-			$highestRow = $objWorksheet->getHighestRow(); 
+			$highestRow = $objWorksheet->getHighestRow();
 			// 取得总列数
-			$highestColumn = $objWorksheet->getHighestColumn(); 
-			$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn); 
+			$highestColumn = $objWorksheet->getHighestColumn();
+			$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn);
 			// 创建数组存储数据
-			$excelData = array(); 
+			$excelData = array();
 			// 写入数据到数组中
-			for ($row = 1; $row <= $highestRow; $row++) { 
-				for ($col = 0; $col < $highestColumnIndex; $col++) { 
+			for ($row = 1; $row <= $highestRow; $row++) {
+				for ($col = 0; $col < $highestColumnIndex; $col++) {
 					$excelData[$row][] =(string)$objWorksheet->getCellByColumnAndRow($col, $row)->getValue();
-				} 
+				}
 			}
 			$Single=model('singlegradebackup');
 			$allworks=model('allworksbackup');
@@ -1284,7 +1285,7 @@ use think\Db;
 
 			Db::startTrans();
 			try{
-				for ($i=1; $i <=2 ; $i++) { 
+				for ($i=1; $i <=2 ; $i++) {
 				 	for ($f=3; $f <35 ; $f++) {
 				 		if($i==1){
 							$Xstu=$excelData[$f][1];
@@ -1311,7 +1312,7 @@ use think\Db;
 							 		$allworks->gettheworks($stunum,$work,$re_grade);
 								}
 						 	}
-						 	
+
 						}else if($i==2){
 								$Xstu=$excelData[$f][9];
 						 		$stunum=$excelData[$f][10];
@@ -1333,10 +1334,10 @@ use think\Db;
 							 		$allworks->gettheworks($stunum,$work,$re_grade);
 								}
 						 	}
-						}	
+						}
 					}
 				}
-				Db::commit();  
+				Db::commit();
 			}
 			catch (\Exception $e) {
 			    // 回滚事务
@@ -1371,20 +1372,20 @@ use think\Db;
 				// 获取工作表
 				$objWorksheet = $objPHPexcel->getActiveSheet();
 				// 取得总行数
-				$highestRow = $objWorksheet->getHighestRow(); 
+				$highestRow = $objWorksheet->getHighestRow();
 				// 取得总列数
-				$highestColumn = $objWorksheet->getHighestColumn(); 
-				$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn); 
+				$highestColumn = $objWorksheet->getHighestColumn();
+				$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn);
 				// 创建数组存储数据
-				$excelData = array(); 
+				$excelData = array();
 				// 写入数据到数组中
-				for ($row = 1; $row <= $highestRow; $row++) { 
-					for ($col = 0; $col < $highestColumnIndex; $col++) { 
+				for ($row = 1; $row <= $highestRow; $row++) {
+					for ($col = 0; $col < $highestColumnIndex; $col++) {
 						$excelData[$row][] =(string)$objWorksheet->getCellByColumnAndRow($col, $row)->getValue();
-					} 
+					}
 				}
 				$totalmark=model('totalmarkbackup');
-				for ($i=0,$f=0,$z=3; $i < ($highestRow-1)*2; $i++,$z++) { 
+				for ($i=0,$f=0,$z=3; $i < ($highestRow-1)*2; $i++,$z++) {
 					$Xstu=$excelData[$z][1+($f*9)];
 					$stunum=$excelData[$z][2+($f*9)];
 					$stuname=$excelData[$z][3+($f*9)];
@@ -1394,7 +1395,7 @@ use think\Db;
 						$f++;
 						$z=2;
 					}
-					if($Xstu==''||$stunum==''){		
+					if($Xstu==''||$stunum==''){
 						break;
 					}
 					$data['stunum']=$stunum;
@@ -1404,7 +1405,7 @@ use think\Db;
 					}else{
 						$totalmark->getthetotal($stunum,$exam_grade,$written_grade);//进成绩 {正式}
 			 			// $totalmark->addall($Xstu,$stunum,$stuname,$exam_grade,$written_grade);
-			 			//数据不全测试用 
+			 			//数据不全测试用
 		 			}
 				}
 				$redata['state']=200;
@@ -1456,7 +1457,7 @@ use think\Db;
 			$objPHPExcel->setActiveSheetIndex(0)->setCellValue('A1',$cdata[0]['classname']."实习分组表");
 			//设置第二行序列
 			$charactors = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
-			for ($i=0; $i < 2; $i++) { 
+			for ($i=0; $i < 2; $i++) {
 				$objPHPExcel->setActiveSheetIndex(0)->setCellValue($charactors[0+($i*9)].'2', '组号')
 				->setCellValue($charactors[1+($i*9)].'2', '序号')
 				->setCellValue($charactors[2+($i*9)].'2', '学号')
@@ -1514,17 +1515,17 @@ use think\Db;
 			//制作内容栏
 			//$i代表数据位于哪条,$f代表属于第一还是第二列,$z代表当前指针位于哪一行
 			$temp=$sdata[0]['stugroup'];
-			for ($i=0,$f=0,$z=3; $i < count($sdata); $i++,$z++) { 
+			for ($i=0,$f=0,$z=3; $i < count($sdata); $i++,$z++) {
 				if($z==35){
 					$f++;
 					$z=3;
 				}
 				if($temp!=$sdata[$i]['stugroup']){
 					// $objPHPExcel->getActiveSheet()->getStyle($charactors[1+($f*9)].$z.":".$charactors[8+($f*9)].$z)->getBorders()->getTop()->setBorderStyle(\PHPExcel_Style_Border::BORDER_THICK);
-					$styleArray = array(  
-						'borders' => array(  
-							'top' => array(  
-								'style' => \PHPExcel_Style_Border::BORDER_THICK,//边框是粗的  
+					$styleArray = array(
+						'borders' => array(
+							'top' => array(
+								'style' => \PHPExcel_Style_Border::BORDER_THICK,//边框是粗的
 								// 'color' => array('argb' => 'FFFF0000'),
 
 							),
@@ -1543,10 +1544,10 @@ use think\Db;
 				$objPHPExcel->getActiveSheet()->mergeCells($charactors[7+($f*9)].$z.':'.$charactors[8+($f*9)].$z);
 				$objPHPExcel->setActiveSheetIndex(0)->setCellValue($charactors[7+($f*9)].$z, '');
 			}
-			$styleArray = array(  
-						'borders' => array(  
-							'top' => array(  
-								'style' => \PHPExcel_Style_Border::BORDER_THICK,//边框是粗的  
+			$styleArray = array(
+						'borders' => array(
+							'top' => array(
+								'style' => \PHPExcel_Style_Border::BORDER_THICK,//边框是粗的
 							),
 						),
 					);
@@ -1583,24 +1584,24 @@ use think\Db;
 			// 获取工作表
 			$objWorksheet = $objPHPexcel->getActiveSheet();
 			// 取得总行数
-			$highestRow = $objWorksheet->getHighestRow(); 
+			$highestRow = $objWorksheet->getHighestRow();
 			// 取得总列数
-			$highestColumn = $objWorksheet->getHighestColumn(); 
-			$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn); 
+			$highestColumn = $objWorksheet->getHighestColumn();
+			$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn);
 			// 创建数组存储数据
-			$excelData = array(); 
+			$excelData = array();
 			// 写入数据到数组中
-			for ($row = 1; $row <= $highestRow; $row++) { 
-				for ($col = 0; $col < $highestColumnIndex; $col++) { 
+			for ($row = 1; $row <= $highestRow; $row++) {
+				for ($col = 0; $col < $highestColumnIndex; $col++) {
 					$excelData[$row][] =(string)$objWorksheet->getCellByColumnAndRow($col, $row)->getValue();
-				} 
+				}
 			}
 			$Single=model('singlegradebackup');
 			$allworks=model('allworksbackup');
 			$Work=$gongzhong;
 			$xuanxiu=-1;
 			if($xuanxiu==0){
-				for ($i=1; $i <=2 ; $i++) { 
+				for ($i=1; $i <=2 ; $i++) {
 				 	for ($f=3; $f <35 ; $f++) {
 				 		if($i==1){
 							$Xstu=$excelData[$f][1];
@@ -1624,7 +1625,7 @@ use think\Db;
 							if($stunum==''){
 								break;
 							}else{
-						 		
+
 						 		$Single->changesingle($stunum,$txt,$grade,$re_grade,$work);
 						 		$allworks->gettheworks($stunum,$work,$re_grade);
 
@@ -1633,7 +1634,7 @@ use think\Db;
 					}
 				}
 			}else if($xuanxiu==-1){
-				for ($i=1; $i <=2 ; $i++) { 
+				for ($i=1; $i <=2 ; $i++) {
 				 	for ($f=3; $f <35 ; $f++) {
 				 		if($i==1){
 							$Xstu=$excelData[$f][1];
@@ -1657,7 +1658,7 @@ use think\Db;
 						 		$Single->where(array('stunum'=>$stunum,'work'=>$work))->delete();
 						 		$allworks->gettheworks($stunum,$work,$re_grade);
 						 	}
-						}		
+						}
 					}
 		 		}
 			}
@@ -1735,7 +1736,7 @@ use think\Db;
 			$nextstate=$this->nextcu($page,10);
 			$curriculum=model('curriculum');
 			$data=$curriculum->getcu($page,10);
-			for ($i=0; $i < count($data); $i++) { 
+			for ($i=0; $i < count($data); $i++) {
 				$data[$i]['time']=date('Y-m-d H:i:s',$data[$i]['time']);
 			}
 			$view = new View();
@@ -1789,28 +1790,28 @@ use think\Db;
 			$getdata=$request->param();
 			$curriculum =model('curriculum');
 			$redata=$curriculum->findone(intval($getdata['id']));
-			header("Content-type:text/html;charset=utf-8"); 
-			$file_path=ROOT_PATH."public/uploads/kecheng/".$redata[0]['url']; 
-			//首先要判断给定的文件存在与否 
-			if(!file_exists($file_path)){ 
-			return ; 
-			} 
-			$fp=fopen($file_path,"r"); 
-			$file_size=filesize($file_path); 
-			//下载文件需要用到的头 
-			Header("Content-type: application/octet-stream"); 
-			Header("Accept-Ranges: bytes"); 
-			Header("Accept-Length:".$file_size); 
-			Header("Content-Disposition: attachment; filename=".$redata[0]['url']); 
-			$buffer=1024; 
-			$file_count=0; 
-			//向浏览器返回数据 
-			while(!feof($fp) && $file_count<$file_size){ 
-			$file_con=fread($fp,$buffer); 
-			$file_count+=$buffer; 
-			echo $file_con; 
-			} 
-			fclose($fp); 
+			header("Content-type:text/html;charset=utf-8");
+			$file_path=ROOT_PATH."public/uploads/kecheng/".$redata[0]['url'];
+			//首先要判断给定的文件存在与否
+			if(!file_exists($file_path)){
+			return ;
+			}
+			$fp=fopen($file_path,"r");
+			$file_size=filesize($file_path);
+			//下载文件需要用到的头
+			Header("Content-type: application/octet-stream");
+			Header("Accept-Ranges: bytes");
+			Header("Accept-Length:".$file_size);
+			Header("Content-Disposition: attachment; filename=".$redata[0]['url']);
+			$buffer=1024;
+			$file_count=0;
+			//向浏览器返回数据
+			while(!feof($fp) && $file_count<$file_size){
+			$file_con=fread($fp,$buffer);
+			$file_count+=$buffer;
+			echo $file_con;
+			}
+			fclose($fp);
 		}
 		//增加课程页面
 		function addcu(){
@@ -1847,38 +1848,38 @@ use think\Db;
 			// 获取工作表
 			$objWorksheet=$objPHPexcel->getActiveSheet();
 			// 取得总行数
-			$highestRow = $objWorksheet->getHighestRow(); 
+			$highestRow = $objWorksheet->getHighestRow();
 			// 取得总列数
-			$highestColumn = $objWorksheet->getHighestColumn(); 
-			$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn); 
+			$highestColumn = $objWorksheet->getHighestColumn();
+			$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn);
 			// 创建数组存储数据
-			$excelData = array(); 
+			$excelData = array();
 			// 写入数据到数组中
-			for ($row = 1; $row <= $highestRow; $row++) { 
-				for ($col = 0; $col < $highestColumnIndex; $col++) { 
+			for ($row = 1; $row <= $highestRow; $row++) {
+				for ($col = 0; $col < $highestColumnIndex; $col++) {
 					$excelData[$row][] =(string)$objWorksheet->getCellByColumnAndRow($col, $row)->getValue();
-				} 
+				}
 			}
 			$sheetData = $objPHPexcel->getActiveSheet()->toArray(null,true,true,true);
 			$sheetData=array_values($sheetData);
-			for ($i=0; $i < count($sheetData) ; $i++) { 
+			for ($i=0; $i < count($sheetData) ; $i++) {
 				$sheetData[$i]=array_values($sheetData[$i]);
 			}
 			$arr=$objWorksheet->getMergeCells();
 			// dump($arr);
 			$arr=array_values($arr);
 			// 取得总行数
-			$highestRow = $objWorksheet->getHighestRow(); 
+			$highestRow = $objWorksheet->getHighestRow();
 			// 取得总列数
-			$highestColumn = $objWorksheet->getHighestColumn(); 
+			$highestColumn = $objWorksheet->getHighestColumn();
 			$data=array();
-			for ($i=0; $i <$highestRow ; $i++) { 
+			for ($i=0; $i <$highestRow ; $i++) {
 				$data[$i]=array();
 				for ($f=0; $f <$highestColumnIndex ; $f++) {
 					$data[$i][$f]="1:1";
 				}
 			}
-			for ($i=0; $i < count($arr); $i++) { 
+			for ($i=0; $i < count($arr); $i++) {
 				$temp=explode(':',$arr[$i],2);
 				$hang=$this->calculate(substr($temp[0], 0, 1),substr($temp[1], 0, 1));
 				$lie=substr($temp[1], 1, 100)-substr($temp[0], 1, 100);
@@ -1889,13 +1890,13 @@ use think\Db;
 					}
 				}
 				if($hang>0&&$lie==0){
-					for ($f=$this->charactorsnum(substr($temp[0],0, 1)); $f < $this->charactorsnum(substr($temp[0], 0, 1))+$hang; $f++) { 
+					for ($f=$this->charactorsnum(substr($temp[0],0, 1)); $f < $this->charactorsnum(substr($temp[0], 0, 1))+$hang; $f++) {
 						$data[substr($temp[0], 1, 100)-1][$f]="0:0";
 					}
 				}
 				if($hang>0&&$lie>0){
-					for ($z=substr($temp[0], 1, 100)-1; $z < substr($temp[0], 1, 100)+$lie; $z++) { 
-						for ($f=$this->charactorsnum(substr($temp[0],0, 1))-1; $f < $this->charactorsnum(substr($temp[0], 0, 1))+$hang; $f++) { 
+					for ($z=substr($temp[0], 1, 100)-1; $z < substr($temp[0], 1, 100)+$lie; $z++) {
+						for ($f=$this->charactorsnum(substr($temp[0],0, 1))-1; $f < $this->charactorsnum(substr($temp[0], 0, 1))+$hang; $f++) {
 							$data[$z][$f]="0:0";
 						}
 					}
@@ -2092,13 +2093,13 @@ use think\Db;
 		}
 		//测试还原数据页面
 		function restorepage(){
-			//获取列表 
+			//获取列表
 			$dir=ROOT_PATH."public/uploads/back/";
 			$datalist=$this->list_dir($dir);
 			//dump($datalist);列表数组
 			echo"点击相应文件即可还原：<br>";
-			$num = count($datalist); 
-			for($i=0;$i<$num;++$i){ 
+			$num = count($datalist);
+			for($i=0;$i<$num;++$i){
 				echo '<a href="./back.php?name='.$datalist[$i].'">'.$datalist[$i].'</a><br>';
 			}
 		}
@@ -2149,7 +2150,7 @@ use think\Db;
 			$redata['state']=200;
 			return $redata;
 			// mysql_close();
-			//从文件中逐条取sql	
+			//从文件中逐条取sql
 		}
 		//还原数据接口使用到的函数
 		function GetNextSQL($fp){
@@ -2180,7 +2181,7 @@ use think\Db;
 			$datalist=$this->list_dir($dir);
 			$datalist=array_reverse($datalist);
 			$filename=array();
-			for ($i=0; $i < count($datalist); $i++) { 
+			for ($i=0; $i < count($datalist); $i++) {
 				$filename[$i]=basename($datalist[$i],".sql");
 			}
 			$view = new View();
@@ -2282,9 +2283,9 @@ use think\Db;
 			// 	}
 			// 	$objPHPExcel->getActiveSheet()->getStyle('A6:I'.($z-1))->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::HORIZONTAL_LEFT);
 			// 	//设置边框
-			// 	$styleArray = array(  
-			// 		'borders' => array(  
-			// 			'allborders' => array(  
+			// 	$styleArray = array(
+			// 		'borders' => array(
+			// 			'allborders' => array(
 			// 				'style' => \PHPExcel_Style_Border::BORDER_THIN,//边框是细的
 			// 			),
 			// 		),
@@ -2344,9 +2345,9 @@ use think\Db;
 			// 	$objPHPExcel->setActiveSheetIndex(0)->setCellValue("G".($z+9), "实考".$i."人 总人数 ".$i."人");
 			// 	$objPHPExcel->getActiveSheet()->mergeCells("A".($z+10).":H".($z+10));
 			// 	$objPHPExcel->setActiveSheetIndex(0)->setCellValue("A".($z+10), '平时：70%；期中：0%；期末：20%；实验：10%');
-			// 	$styleArray = array(  
-			// 		'borders' => array(  
-			// 			'allborders' => array(  
+			// 	$styleArray = array(
+			// 		'borders' => array(
+			// 			'allborders' => array(
 			// 				'style' => \PHPExcel_Style_Border::BORDER_THIN,//边框是细的
 			// 			),
 			// 		),
@@ -2372,11 +2373,11 @@ use think\Db;
 			// 	$objPHPExcel->getActiveSheet()->getStyle("A".($z+1).":I".($z+15))->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::VERTICAL_BOTTOM);
 			// 	//设置单元格高度宽度
 			// 	$charactors = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
-			// 	for ($i=0; $i < 26; $i++) { 
+			// 	for ($i=0; $i < 26; $i++) {
 			// 		$objPHPExcel->getActiveSheet()->getColumnDimension($charactors[$i])->setWidth(10);
 			// 	}
 			// 	$objPHPExcel->getActiveSheet()->getRowDimension(1)->setRowHeight(21);
-			// 	for ($i=2; $i < $z+1; $i++) { 
+			// 	for ($i=2; $i < $z+1; $i++) {
 			// 		$objPHPExcel->getActiveSheet()->getRowDimension($i)->setRowHeight(12);
 			// 	}
 			// 	//设置字体
@@ -2434,7 +2435,7 @@ use think\Db;
 			$objPHPExcel->setActiveSheetIndex(0)->setCellValue('A1',$cdata[0]['classname']."实习成绩表");
 			//设置第二行序列
 			$charactors = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
-			for ($i=0; $i < 2; $i++) { 
+			for ($i=0; $i < 2; $i++) {
 				$objPHPExcel->setActiveSheetIndex(0)->setCellValue($charactors[0+($i*9)].'2', '组号')
 				->setCellValue($charactors[1+($i*9)].'2', '序号')
 				->setCellValue($charactors[2+($i*9)].'2', '学号')
@@ -2492,7 +2493,7 @@ use think\Db;
 			//制作内容栏
 			//$i代表数据位于哪条,$f代表属于第一还是第二列,$z代表当前指针位于哪一行
 			for ($i=0,$f=0,$z=3; $i < count($sdata); $i++,$z++) {
-				$temp=$totalmark->getone($sdata[$i]['stunum']); 
+				$temp=$totalmark->getone($sdata[$i]['stunum']);
 				if($z==35){
 					$f++;
 					$z=3;
@@ -2506,9 +2507,9 @@ use think\Db;
 				->setCellValue($charactors[7+($f*9)].$z, $temp[0]['written_grade'])
 				->setCellValue($charactors[8+($f*9)].$z, $temp[0]['final_grade']);
 			}
-			$styleArray = array(  
-				'borders' => array(  
-					'allborders' => array(  
+			$styleArray = array(
+				'borders' => array(
+					'allborders' => array(
 						'style' => \PHPExcel_Style_Border::BORDER_THIN,
 					),
 				),
@@ -2612,9 +2613,9 @@ use think\Db;
 			// 		->setCellValue("C".$z, $temp[0]['stuname']);
 			// 	}
 			// 	//设置边框
-			// 	$styleArray = array(  
-			// 		'borders' => array(  
-			// 			'allborders' => array(  
+			// 	$styleArray = array(
+			// 		'borders' => array(
+			// 			'allborders' => array(
 			// 				'style' => \PHPExcel_Style_Border::BORDER_THIN,//边框是细的
 			// 			),
 			// 		),
@@ -2674,9 +2675,9 @@ use think\Db;
 			// 	$objPHPExcel->setActiveSheetIndex(0)->setCellValue("G".($z+9), "实考".$i."人 总人数 ".$i."人");
 			// 	$objPHPExcel->getActiveSheet()->mergeCells("A".($z+10).":H".($z+10));
 			// 	$objPHPExcel->setActiveSheetIndex(0)->setCellValue("A".($z+10), '平时：70%；期中：0%；期末：20%；实验：10%');
-			// 	$styleArray = array(  
-			// 		'borders' => array(  
-			// 			'allborders' => array(  
+			// 	$styleArray = array(
+			// 		'borders' => array(
+			// 			'allborders' => array(
 			// 				'style' => \PHPExcel_Style_Border::BORDER_THIN,//边框是细的
 			// 			),
 			// 		),
@@ -2702,11 +2703,11 @@ use think\Db;
 			// 	$objPHPExcel->getActiveSheet()->getStyle("A".($z+1).":I".($z+15))->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::VERTICAL_BOTTOM);
 			// 	//设置单元格高度宽度
 			// 	$charactors = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
-			// 	for ($i=0; $i < 26; $i++) { 
+			// 	for ($i=0; $i < 26; $i++) {
 			// 		$objPHPExcel->getActiveSheet()->getColumnDimension($charactors[$i])->setWidth(10);
 			// 	}
 			// 	$objPHPExcel->getActiveSheet()->getRowDimension(1)->setRowHeight(21);
-			// 	for ($i=2; $i < $z+1; $i++) { 
+			// 	for ($i=2; $i < $z+1; $i++) {
 			// 		$objPHPExcel->getActiveSheet()->getRowDimension($i)->setRowHeight(12);
 			// 	}
 			// 	//设置字体
@@ -2763,7 +2764,7 @@ use think\Db;
 			$objPHPExcel->setActiveSheetIndex(0)->setCellValue('A1',$cdata[0]['classname']."实习成绩表");
 			//设置第二行序列
 			$charactors = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
-			for ($i=0; $i < 2; $i++) { 
+			for ($i=0; $i < 2; $i++) {
 				$objPHPExcel->setActiveSheetIndex(0)->setCellValue($charactors[0+($i*9)].'2', '组号')
 				->setCellValue($charactors[1+($i*9)].'2', '序号')
 				->setCellValue($charactors[2+($i*9)].'2', '学号')
@@ -2821,7 +2822,7 @@ use think\Db;
 			//制作内容栏
 			$totalmark=model('totalmarkbackup');
 			//$i代表数据位于哪条,$f代表属于第一还是第二列,$z代表当前指针位于哪一行
-			for ($i=0,$f=0,$z=3; $i < count($sdata); $i++,$z++) { 
+			for ($i=0,$f=0,$z=3; $i < count($sdata); $i++,$z++) {
 				if($z==35){
 					$f++;
 					$z=3;
@@ -2835,9 +2836,9 @@ use think\Db;
 				->setCellValue($charactors[6+($f*9)].$z, $result1[0]['exam_grade'])
 				->setCellValue($charactors[7+($f*9)].$z, '');
 			}
-			$styleArray = array(  
-						'borders' => array(  
-							'allborders' => array(  
+			$styleArray = array(
+						'borders' => array(
+							'allborders' => array(
 								'style' => \PHPExcel_Style_Border::BORDER_THIN,
 								// 'color' => array('argb' => 'FFFF0000'),
 
@@ -2894,7 +2895,7 @@ use think\Db;
 			// 读取文件并建立对应该文件excel类
 			$objPHPexcel = $objReader->load($filename);
 			// 创建数组存储数据
-			$excelData = array(); 
+			$excelData = array();
 			$allstudent=model('allstudentbackup');
 			$totalmark=model('totalmarkbackup');
 			$redata['content']='';
@@ -2905,18 +2906,18 @@ use think\Db;
 				// 获取工作表
 				$objWorksheet = $objPHPexcel->getSheet($f);
 				// 取得总行数
-				$highestRow = $objWorksheet->getHighestRow(); 
+				$highestRow = $objWorksheet->getHighestRow();
 				// 取得总列数
-				$highestColumn = $objWorksheet->getHighestColumn(); 
-				$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn); 
+				$highestColumn = $objWorksheet->getHighestColumn();
+				$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn);
 				// 写入数据到数组中
-				$excelData = array(); 
-				for ($row = 1; $row <= $highestRow; $row++) { 
-					for ($col = 0; $col < $highestColumnIndex; $col++) { 
+				$excelData = array();
+				for ($row = 1; $row <= $highestRow; $row++) {
+					for ($col = 0; $col < $highestColumnIndex; $col++) {
 						$excelData[$row][] =(string)$objWorksheet->getCellByColumnAndRow($col, $row)->getValue();
 					}
 				}
-				for ($i=0; $i < $highestColumnIndex; $i++) { 
+				for ($i=0; $i < $highestColumnIndex; $i++) {
 					if($excelData[3][$i]=='姓名'){
 						$namecol=$i;
 					}
@@ -2924,7 +2925,7 @@ use think\Db;
 						$gradecol=$i;
 					}
 				}
-				for ($i=4; $i <= $highestRow; $i++) { 
+				for ($i=4; $i <= $highestRow; $i++) {
 					if($objWorksheet->getCellByColumnAndRow(5, $i)->getValue()==''){
 						unset($excelData);
 						break;
@@ -2941,7 +2942,7 @@ use think\Db;
 						$redata['content']=$redata['content'].'<tr><td>'.$stuname.'</td><td></td><td></td><td></td><td>查无此人</td></tr>';
 					}elseif($result==0){
 						$result1=$allstudent->selectone($stuname);
-						for ($f=0; $f <count($result1) ; $f++) { 
+						for ($f=0; $f <count($result1) ; $f++) {
 							$redata['content']=$redata['content'].'<tr><td>'.$stuname.'</td><td>'.$result1[$f]['sex'].'</td><td>'.$result1[$f]['classname'].'</td><td>'.$result1[$f]['stunum'].'</td><td>有重名者</td></tr>';
 						}
 					}elseif ($result==2) {
@@ -2950,7 +2951,7 @@ use think\Db;
 				}
 
 			}
-			
+
 			$redata['state']=200;
 			return $redata;
 		}
@@ -2982,10 +2983,10 @@ use think\Db;
 			$duiying3=array(0=>'Xstu',1=>'stunum',2=>'stuname',3=>'Qian_gong',4=>'Pu_xi',5=>'Mo_xue',6=>'Dian_huo_hua',7=>'Chong_ya',8=>'Zhu_zao',9=>'Mu_ju',10=>'Han_jie',11=>'Pu_che',12=>'Jia_gong',13=>'Shu_chong',14=>'Shu_xi',15=>'Shu_che',16=>'PLC',17=>'Xian_qie_ge',18=>'Kuai_su_cheng_xing',19=>'re_chu_li');
 			$gdata=array();
 			//将学生数据存入gdata并且计算工种一共有哪些
-			for ($i=0; $i < count($duiying3); $i++) { 
+			for ($i=0; $i < count($duiying3); $i++) {
 				$duiying3[$i]=1;
 			}
-			for ($i=0; $i < count($sdata); $i++) { 
+			for ($i=0; $i < count($sdata); $i++) {
 				$temp=$allworks->returnone($sdata[$i]['stunum']);
 				$gdata[$i]=$temp[0];
 				if($temp[0]['Xstu']!='-1'){
@@ -3049,17 +3050,17 @@ use think\Db;
 					$duiying3[19]='re_chu_li';
 				}
 			}
-			// print_r($duiying3); 
+			// print_r($duiying3);
 			//序列化对应,然后写入
 			$content='<tr>';
-			for ($i=0; $i < 20; $i++) { 
+			for ($i=0; $i < 20; $i++) {
 				if($duiying3[$i]!=1){
 					$content=$content.'<td>'.$duiying[$duiying3[$i]].'</td>';
 				}
 			}
 			$content=$content.'<td>确定操作</td></tr>';
 			// echo $content;
-			for ($i=0; $i < count($sdata); $i++) { 
+			for ($i=0; $i < count($sdata); $i++) {
 				// $temp=$allworks->returnone($sdata[$i]['stunum']);
 				// $gdata[$i+1]=$temp[0];
 				$content=$content.'<tr id="form'.$i.'">';
@@ -3089,7 +3090,7 @@ use think\Db;
 			if($data!=''){
 				$datalist=explode(':#:',$data);
 				unset($datalist[count($datalist)-1]);
-				for ($i=0; $i < count($datalist)/2; $i++) { 
+				for ($i=0; $i < count($datalist)/2; $i++) {
 					$data1[$datalist[$i*2]]=$datalist[($i*2+1)];
 					$allworks->updateone($id,$data1);
 				}
