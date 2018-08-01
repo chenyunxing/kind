@@ -20,6 +20,7 @@ use think\Db;
 				echo '<script>alert("未登录!");window.location.href="'.url('index/readylogin/index').'"</script>';
 			}
 		}
+		//index页面
 		public function index()
 		{
 			return view();
