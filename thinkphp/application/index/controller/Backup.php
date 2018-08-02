@@ -30,6 +30,7 @@ use think\Db;
 			$view = new View();
 			return $view->fetch();
 		}
+		//页面主体部分
 		public function modify(){
 			$request = request();
 			if(input('?get.pageNumber')&&input('get.pageNumber')>=1){
