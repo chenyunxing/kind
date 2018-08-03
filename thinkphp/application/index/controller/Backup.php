@@ -448,7 +448,7 @@ use think\Db;
 			$objPHPExcel->getActiveSheet()->getStyle('F3:I34')->getAlignment()->setVertical(\PHPExcel_Style_Alignment::VERTICAL_CENTER);
 			$objPHPExcel->getActiveSheet()->getStyle('O3:R34')->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
 			$objPHPExcel->getActiveSheet()->getStyle('O3:R34')->getAlignment()->setVertical(\PHPExcel_Style_Alignment::VERTICAL_CENTER);
-
+			//设置单元格格式
 			$objPHPExcel->getActiveSheet()->getStyle('B3:B34')->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
 			$objPHPExcel->getActiveSheet()->getStyle('B3:B34')->getAlignment()->setVertical(\PHPExcel_Style_Alignment::VERTICAL_CENTER);
 			$objPHPExcel->getActiveSheet()->getStyle('J3:J34')->getAlignment()->setHorizontal(\PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
