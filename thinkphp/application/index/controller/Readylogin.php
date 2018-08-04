@@ -8,7 +8,7 @@ class Readylogin
 		return view();
 	}
 	public function justlogin(){
-		//请求类注册
+		//请求类注册1
 		$request = request();
 		$redata=$request->param();
 		$redata['username']=$request->param('username');
