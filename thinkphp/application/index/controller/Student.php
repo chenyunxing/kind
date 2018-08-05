@@ -7,10 +7,11 @@ use think\Request;
 use think\Config;
 class student extends Controller
 {
+	//通告首页
 	public function index(){
 		$notice=model('notice');
 		$data=$notice->agetnotice();
-		for ($i=0; $i < count($data); $i++) { 
+		for ($i=0; $i < count($data); $i++) {
 			$data[$i]['time']=date("Y-m-d",$data[$i]['time']);
 		}
 		$view=new View();
@@ -41,38 +42,38 @@ class student extends Controller
 			// 获取工作表
 			$objWorksheet=$objPHPexcel->getActiveSheet();
 			// 取得总行数
-			$highestRow = $objWorksheet->getHighestRow(); 
+			$highestRow = $objWorksheet->getHighestRow();
 			// 取得总列数
-			$highestColumn = $objWorksheet->getHighestColumn(); 
-			$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn); 
+			$highestColumn = $objWorksheet->getHighestColumn();
+			$highestColumnIndex = \PHPexcel_Cell::columnIndexFromString($highestColumn);
 			// 创建数组存储数据
-			$excelData = array(); 
+			$excelData = array();
 			// 写入数据到数组中
-			for ($row = 1; $row <= $highestRow; $row++) { 
-				for ($col = 0; $col < $highestColumnIndex; $col++) { 
+			for ($row = 1; $row <= $highestRow; $row++) {
+				for ($col = 0; $col < $highestColumnIndex; $col++) {
 					$excelData[$row][] =(string)$objWorksheet->getCellByColumnAndRow($col, $row)->getValue();
-				} 
+				}
 			}
 			$sheetData = $objPHPexcel->getActiveSheet()->toArray(null,true,true,true);
 			$sheetData=array_values($sheetData);
-			for ($i=0; $i < count($sheetData) ; $i++) { 
+			for ($i=0; $i < count($sheetData) ; $i++) {
 				$sheetData[$i]=array_values($sheetData[$i]);
 			}
 			$arr=$objWorksheet->getMergeCells();
 			// dump($arr);
 			$arr=array_values($arr);
 			// 取得总行数
-			$highestRow = $objWorksheet->getHighestRow(); 
+			$highestRow = $objWorksheet->getHighestRow();
 			// 取得总列数
-			$highestColumn = $objWorksheet->getHighestColumn(); 
+			$highestColumn = $objWorksheet->getHighestColumn();
 			$data=array();
-			for ($i=0; $i <$highestRow ; $i++) { 
+			for ($i=0; $i <$highestRow ; $i++) {
 				$data[$i]=array();
 				for ($f=0; $f <$highestColumnIndex ; $f++) {
 					$data[$i][$f]="1:1";
 				}
 			}
-			for ($i=0; $i < count($arr); $i++) { 
+			for ($i=0; $i < count($arr); $i++) {
 				$temp=explode(':',$arr[$i],2);
 				$hang=$this->calculate(substr($temp[0], 0, 1),substr($temp[1], 0, 1));
 				$lie=substr($temp[1], 1, 100)-substr($temp[0], 1, 100);
@@ -83,13 +84,13 @@ class student extends Controller
 					}
 				}
 				if($hang>0&&$lie==0){
-					for ($f=$this->charactorsnum(substr($temp[0],0, 1)); $f < $this->charactorsnum(substr($temp[0], 0, 1))+$hang; $f++) { 
+					for ($f=$this->charactorsnum(substr($temp[0],0, 1)); $f < $this->charactorsnum(substr($temp[0], 0, 1))+$hang; $f++) {
 						$data[substr($temp[0], 1, 100)-1][$f]="0:0";
 					}
 				}
 				if($hang>0&&$lie>0){
-					for ($z=substr($temp[0], 1, 100)-1; $z < substr($temp[0], 1, 100)+$lie; $z++) { 
-						for ($f=$this->charactorsnum(substr($temp[0],0, 1))-1; $f < $this->charactorsnum(substr($temp[0], 0, 1))+$hang; $f++) { 
+					for ($z=substr($temp[0], 1, 100)-1; $z < substr($temp[0], 1, 100)+$lie; $z++) {
+						for ($f=$this->charactorsnum(substr($temp[0],0, 1))-1; $f < $this->charactorsnum(substr($temp[0], 0, 1))+$hang; $f++) {
 							$data[$z][$f]="0:0";
 						}
 					}
@@ -109,7 +110,7 @@ class student extends Controller
 		}else{
 			$this->redirect('student/index');
 		}
-		
+
 	}
 	//计算两个字母间距的函数，暂时并未判断太多，输入参数必须合法
 	//两个参数分别为第一个字母和第二个字母
