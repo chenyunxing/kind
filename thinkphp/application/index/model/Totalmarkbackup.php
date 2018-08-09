@@ -1,8 +1,9 @@
-<?php 
+<?php
 namespace app\index\model;
 use think\Model;
 class Totalmarkbackup extends Model
 {
+	//设置数据库连接信息
 	protected $connection = [
 		// 数据库类型
 		'type'            => 'mysql',
@@ -54,7 +55,7 @@ class Totalmarkbackup extends Model
 		public function returnall()
 	{
 		 return $this->all();
-		
+
 	}
 
 	public function getthereg($stunum,$regular_grade)
@@ -76,7 +77,7 @@ class Totalmarkbackup extends Model
 	{
 		$data['stunum'] = $stunum;
 		return $this->where($data)->delete();
-		
+
 	}
 	// 返回值解释，返回-1代码数据库没有这个人，返回1代表修改完成，返回0代码有重名者
 	public function changeone($stuname,$exam_grade){
