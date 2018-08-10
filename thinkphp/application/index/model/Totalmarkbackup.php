@@ -37,7 +37,7 @@ class Totalmarkbackup extends Model
 		$this->data($data,true)->isUpdate(false)->save();
 	}
 
-
+	//增加一条新纪录
 	public function add($Xstu,$stunum,$stuname)
 	{
 		$data['Xstu'] = $Xstu;
