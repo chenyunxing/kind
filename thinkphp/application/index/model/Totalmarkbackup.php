@@ -26,6 +26,7 @@ class Totalmarkbackup extends Model
 		// 数据库表前缀
 		'prefix'          => '',
 	];
+	//增加一个学生的数据，包括学号等
 	public function addall($Xstu,$stunum,$stuname,$exam_grade,$written_grade)
 	{
 		$data['Xstu'] = $Xstu;
