@@ -1,9 +1,9 @@
-<?php 
+<?php
 namespace app\index\model;
 use think\Model;
 class Totalmark extends Model
 {
-
+	//总成绩列表，导入为初始化的结果
 	public function addall($Xstu,$stunum,$stuname,$exam_grade,$written_grade)
 	{
 		$data['Xstu'] = $Xstu;
@@ -33,7 +33,7 @@ class Totalmark extends Model
 		public function returnall()
 	{
 		 return $this->all();
-		
+
 	}
 
 	public function getthereg($stunum,$regular_grade)
@@ -55,7 +55,7 @@ class Totalmark extends Model
 	{
 		$data['stunum'] = $stunum;
 		return $this->where($data)->delete();
-		
+
 	}
 	// 返回值解释，返回-1代码数据库没有这个人，返回1代表修改完成，返回0代码有重名者
 	public function changeone($stuname,$exam_grade){
