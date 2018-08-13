@@ -35,7 +35,7 @@ class Totalmark extends Model
 		 return $this->all();
 
 	}
-
+  //修改总成绩
 	public function getthereg($stunum,$regular_grade)
 	{
 
