@@ -1,8 +1,9 @@
-<?php 
+<?php
 namespace app\index\model;
 use think\Model;
 class Allstudent extends Model
 {
+	// 增加学生
 	public function addstudent($Xstu,$stunum,$stuname,$sex,$classname)
 	{
 		// $addstudent = new Addstudent;
@@ -61,10 +62,10 @@ class Allstudent extends Model
 	}
 	public function selectall($classdata){
 		$sdata = array();
-		for ($i=0; $i < count($classdata); $i++) { 
+		for ($i=0; $i < count($classdata); $i++) {
 			$sdata1 = array();
 			$sdata1 = $this->returnone($classdata[$i]['classname']);
-			for ($f=0; $f < count($sdata1); $f++) { 
+			for ($f=0; $f < count($sdata1); $f++) {
 				$sdata[count($sdata)] = $sdata1[$f];
 			}
 		}
