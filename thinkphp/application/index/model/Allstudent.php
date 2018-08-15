@@ -35,6 +35,7 @@ class Allstudent extends Model
 		$change['stugroup']=$stugroup;
 		return $this->where($data)->update($change);
 	}
+	//返回所有学生数据
 	public function returnall()
 	{
 		return $this->select();
