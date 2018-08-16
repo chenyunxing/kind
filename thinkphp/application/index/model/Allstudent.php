@@ -61,6 +61,7 @@ class Allstudent extends Model
 		$data['id']=$id;
 		return $this->where($data)->select();
 	}
+	//搜索一个班级所有数据
 	public function selectall($classdata){
 		$sdata = array();
 		for ($i=0; $i < count($classdata); $i++) {
