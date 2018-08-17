@@ -1,8 +1,9 @@
-<?php 
+<?php
 namespace app\index\model;
 use think\Model;
 class Classssbackup extends Model
 {
+	//连接备份库
 	protected $connection = [
 		// 数据库类型
 		'type'            => 'mysql',
@@ -25,6 +26,7 @@ class Classssbackup extends Model
 		// 数据库表前缀
 		'prefix'          => '',
 	];
+
 	public function addclass($classname,$allS)
 	{
 		// $addstudent = new Addstudent;
