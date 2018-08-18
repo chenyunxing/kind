@@ -1,4 +1,4 @@
-<?php 
+<?php
 namespace app\index\model;
 use think\Model;
 class Allworksbackup extends Model
@@ -37,6 +37,7 @@ class Allworksbackup extends Model
 	public function returnone($stunum){
 		return $this->where(array('stunum' => $stunum ))->select();
 	}
+	//获取对应工种成绩
 	public function gettheworks($stunum,$ii,$re_grade)
 	{
 
@@ -46,7 +47,7 @@ class Allworksbackup extends Model
 	public function returnall()
 	{
 		 return $this->select();
-		
+
 	}
 	public function deleteone($stunum)
 	{
