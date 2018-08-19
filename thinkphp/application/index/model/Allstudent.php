@@ -45,6 +45,7 @@ class Allstudent extends Model
 		$data['stunum']=$stunum;
 		return $this->where($data)->select();
 	}
+	//删除一个班级的信息
 	function deleteclass($classname){
 		$data['classname']=$classname;
 		return $this->where($data)->delete();
