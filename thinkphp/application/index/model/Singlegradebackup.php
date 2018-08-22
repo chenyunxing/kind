@@ -1,4 +1,4 @@
-<?php 
+<?php
 namespace app\index\model;
 use think\Model;
 class Singlegradebackup extends Model
@@ -49,10 +49,10 @@ class Singlegradebackup extends Model
 
 
 
-
+	//改变一个人的单科成绩
 	public function changesingle($stunum,$txt,$grade,$re_grade,$work)
 	{
-		
+
 		$this->where(array('stunum'=>$stunum,'work'=>$work))->update(['re_grade'=>$re_grade,'txt'=>$txt,'grade'=>$grade]);
 	}
 	public function deleteone($stunum){
@@ -63,13 +63,13 @@ class Singlegradebackup extends Model
 
 		public function done($zzz)
 	{
-		
+
 	}
 
 		public function returnall()
 	{
 		 return $this->select();
-		
+
 	}
 }
 
